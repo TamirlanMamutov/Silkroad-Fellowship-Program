@@ -1,0 +1,107 @@
+.root {
+  display: flex;
+  width: 352px;
+  height: 195px;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow:
+    0px 2px 8px 0px rgba(0, 0, 0, 0.12),
+    0px 10px 10px -5px rgba(0, 0, 0, 0.02);
+  background: var(--token-w-4c-iLNjBI9);
+  row-gap: 10px;
+  border-radius: 5px;
+  padding: 20px;
+  border: 1px solid var(--token-L89ExH6ks);
+}
+.rootlong {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 10px;
+  row-gap: 0px;
+  min-width: 0;
+}
+.freeBox__i8O2D {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 32px;
+}
+.freeBoxlong__i8O2Dk82R {
+  display: none;
+}
+.freeBox__dp36 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background: var(--token-XwpJY1cPVQ2);
+  flex-shrink: 0;
+}
+.svg__qwmxq {
+  position: relative;
+  object-fit: cover;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+.freeBox__mPd7Q {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  row-gap: 8px;
+}
+.freeBoxlong__mPd7Qk82R {
+  align-items: flex-start;
+}
+.slotTargetTitle {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--token-NEon4Y--Z);
+}
+.slotTargetDescription {
+  color: var(--token-jBhCqxBbh1U);
+  text-align: center;
+}
+.slotTargetDescriptionlong {
+  text-align: left;
+}
+.freeBox__ef6S {
+  position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  display: none;
+}
+.freeBoxlong__ef6SK82R {
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 1px 0px var(--token-ORqQ77SGOfVG);
+  background: var(--token-w-4c-iLNjBI9);
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: 1px solid var(--token-ORqQ77SGOfVG);
+}
+.svg__mcLca {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  object-fit: cover;
+  flex-shrink: 0;
+}
