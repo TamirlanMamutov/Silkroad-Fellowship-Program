@@ -385,49 +385,24 @@
           "moduleFilePath": "plasmic/simple_light_landing_page/icons/PlasmicIcon__SearchSvg.tsx"
         },
         {
-          "id": "rKzojCvLNCrI",
+          "id": "NWPPDeWZZEXe",
           "name": "Icon2Icon",
           "moduleFilePath": "plasmic/simple_light_landing_page/icons/PlasmicIcon__Icon2.tsx"
         },
         {
-          "id": "JRxYeOBgIVu_",
+          "id": "aXmbGKMt6CSJ",
           "name": "Icon3Icon",
           "moduleFilePath": "plasmic/simple_light_landing_page/icons/PlasmicIcon__Icon3.tsx"
         },
         {
-          "id": "dgb4cKOaBpT2",
+          "id": "WKFpOLoQpC2d",
           "name": "Icon4Icon",
           "moduleFilePath": "plasmic/simple_light_landing_page/icons/PlasmicIcon__Icon4.tsx"
         },
         {
-          "id": "vJ8Yo6oAcXXo",
+          "id": "TA23LFBUDMIk",
           "name": "Icon5Icon",
           "moduleFilePath": "plasmic/simple_light_landing_page/icons/PlasmicIcon__Icon5.tsx"
-        },
-        {
-          "id": "2mcOfPkf23U6",
-          "name": "Icon6Icon",
-          "moduleFilePath": "plasmic/simple_light_landing_page/icons/PlasmicIcon__Icon6.tsx"
-        },
-        {
-          "id": "-6EMW7tAnRc4",
-          "name": "Icon7Icon",
-          "moduleFilePath": "plasmic/simple_light_landing_page/icons/PlasmicIcon__Icon7.tsx"
-        },
-        {
-          "id": "AkT3y3h5ln-C",
-          "name": "Icon8Icon",
-          "moduleFilePath": "plasmic/simple_light_landing_page/icons/PlasmicIcon__Icon8.tsx"
-        },
-        {
-          "id": "JgAWzmHnyCvd",
-          "name": "Icon9Icon",
-          "moduleFilePath": "plasmic/simple_light_landing_page/icons/PlasmicIcon__Icon9.tsx"
-        },
-        {
-          "id": "5UiK3G_OqHQg",
-          "name": "Icon10Icon",
-          "moduleFilePath": "plasmic/simple_light_landing_page/icons/PlasmicIcon__Icon10.tsx"
         }
       ],
       "images": [

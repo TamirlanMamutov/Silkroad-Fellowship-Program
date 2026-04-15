@@ -59,7 +59,6 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
-import Header from "../../Header"; // plasmic-import: fvrrAjoqQjp-/component
 import { _useGlobalVariants } from "./plasmic"; // plasmic-import: q99j7awHXXkWnTbGHfeoZt/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: q99j7awHXXkWnTbGHfeoZt/styleTokensProvider
 
@@ -68,15 +67,10 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic.module.css"; // plasmic-import: q99j7awHXXkWnTbGHfeoZt/projectcss
 import sty from "./PlasmicHome.module.css"; // plasmic-import: ZScbKbJPAq6N/css
 
-import Icon4Icon from "./icons/PlasmicIcon__Icon4"; // plasmic-import: dgb4cKOaBpT2/icon
-import Icon8Icon from "./icons/PlasmicIcon__Icon8"; // plasmic-import: AkT3y3h5ln-C/icon
-import Icon7Icon from "./icons/PlasmicIcon__Icon7"; // plasmic-import: -6EMW7tAnRc4/icon
-import Icon5Icon from "./icons/PlasmicIcon__Icon5"; // plasmic-import: vJ8Yo6oAcXXo/icon
-import Icon6Icon from "./icons/PlasmicIcon__Icon6"; // plasmic-import: 2mcOfPkf23U6/icon
-import Icon10Icon from "./icons/PlasmicIcon__Icon10"; // plasmic-import: 5UiK3G_OqHQg/icon
-import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: JRxYeOBgIVu_/icon
-import Icon9Icon from "./icons/PlasmicIcon__Icon9"; // plasmic-import: JgAWzmHnyCvd/icon
-import Icon2Icon from "./icons/PlasmicIcon__Icon2"; // plasmic-import: rKzojCvLNCrI/icon
+import Icon5Icon from "./icons/PlasmicIcon__Icon5"; // plasmic-import: TA23LFBUDMIk/icon
+import Icon2Icon from "./icons/PlasmicIcon__Icon2"; // plasmic-import: NWPPDeWZZEXe/icon
+import Icon3Icon from "./icons/PlasmicIcon__Icon3"; // plasmic-import: aXmbGKMt6CSJ/icon
+import Icon4Icon from "./icons/PlasmicIcon__Icon4"; // plasmic-import: WKFpOLoQpC2d/icon
 
 const emptyProxy: any = new Proxy(() => "", {
   get(_, prop) {
@@ -122,9 +116,21 @@ export const PlasmicHome__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHome__OverridesType = {
   root?: Flex__<"div">;
-  nav?: Flex__<"nav">;
-  h1?: Flex__<"h1">;
-  footer?: Flex__<"footer">;
+  textbox9?: Flex__<"input">;
+  textbox10?: Flex__<"input">;
+  textbox11?: Flex__<"input">;
+  textarea3?: Flex__<"textarea">;
+  textbox?: Flex__<"input">;
+  textbox2?: Flex__<"input">;
+  textbox3?: Flex__<"input">;
+  textbox4?: Flex__<"input">;
+  textarea?: Flex__<"textarea">;
+  textbox5?: Flex__<"input">;
+  textbox6?: Flex__<"input">;
+  textbox7?: Flex__<"input">;
+  textbox8?: Flex__<"input">;
+  textarea2?: Flex__<"textarea">;
+  header?: Flex__<"header">;
 };
 
 export interface DefaultHomeProps {}
@@ -168,10 +174,120 @@ function PlasmicHome__RenderFunc(props: {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
+  const stateSpecs: Parameters<typeof useDollarState>[0] = React.useMemo(
+    () => [
+      {
+        path: "textbox.value",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => undefined
+      },
+      {
+        path: "textbox2.value",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => undefined
+      },
+      {
+        path: "textbox3.value",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => undefined
+      },
+      {
+        path: "textbox4.value",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => undefined
+      },
+      {
+        path: "textarea.value",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => undefined
+      },
+      {
+        path: "textbox5.value",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => undefined
+      },
+      {
+        path: "textbox6.value",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => undefined
+      },
+      {
+        path: "textbox7.value",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => undefined
+      },
+      {
+        path: "textbox8.value",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => undefined
+      },
+      {
+        path: "textarea2.value",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => undefined
+      },
+      {
+        path: "textbox9.value",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => undefined
+      },
+      {
+        path: "textbox10.value",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => undefined
+      },
+      {
+        path: "textbox11.value",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => undefined
+      },
+      {
+        path: "textarea3.value",
+        type: "private",
+        variableType: "text",
+        initFunc: ({ $props, $state, $queries, $q, $ctx }) => undefined
+      }
+    ],
+    [$props, $ctx, $refs]
+  );
+  const $state = useDollarState(stateSpecs, {
+    $props,
+    $ctx,
+    $queries: {},
+    $q: {},
+    $refs
+  });
+
   const pageMetadata = generateDynamicMetadata(
     wrapQueriesWithLoadingProxy({}),
     $ctx as PageCtx
   );
+
+  const [isTextareaFocus, triggerTextareaFocusProps] = useTrigger(
+    "useFocused",
+    {}
+  );
+  const [isTextarea2Focus, triggerTextarea2FocusProps] = useTrigger(
+    "useFocused",
+    {}
+  );
+  const triggers = {
+    focus_textarea: isTextareaFocus,
+    focus_textarea2: isTextarea2Focus
+  };
 
   const styleTokensClassNames = _useStyleTokens();
 
@@ -200,149 +316,180 @@ function PlasmicHome__RenderFunc(props: {
             sty.root
           )}
         >
-          <Header className={classNames("__wab_instance", sty.header__cbJUt)} />
-
-          <div className={classNames(projectcss.all, sty.freeBox__aejQc)}>
-            <header className={classNames(projectcss.all, sty.header__db0Qt)}>
-              <div className={classNames(projectcss.all, sty.freeBox__oe94V)}>
-                <nav
-                  data-plasmic-name={"nav"}
-                  data-plasmic-override={overrides.nav}
-                  className={classNames(projectcss.all, sty.nav)}
-                >
+          <div className={classNames(projectcss.all, sty.freeBox___97UTt)}>
+            <nav className={classNames(projectcss.all, sty.nav__roHgP)}>
+              <div className={classNames(projectcss.all, sty.freeBox__cqPjc)}>
+                <div className={classNames(projectcss.all, sty.freeBox__hBoy5)}>
                   <div
-                    className={classNames(projectcss.all, sty.freeBox__vqafO)}
+                    className={classNames(projectcss.all, sty.freeBox__k2ON)}
                   >
-                    <span
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.span,
-                        projectcss.span__q99j7,
-                        projectcss.__wab_text,
-                        sty.span__mzymz
-                      )}
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__iehef)}
                     >
-                      {"Silkroad Fellowship"}
-                    </span>
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__oi4DT
+                        )}
+                      >
+                        {"~"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__nRm4M)}
+                    >
+                      <h1
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h1,
+                          projectcss.h1__q99j7,
+                          projectcss.__wab_text,
+                          sty.h1__n3M8Z
+                        )}
+                      >
+                        {"Silkroad Innovation Hub"}
+                      </h1>
+                      <p
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.p,
+                          projectcss.p__q99j7,
+                          projectcss.__wab_text,
+                          sty.p__yq47M
+                        )}
+                      >
+                        {"Fellowship Program"}
+                      </p>
+                    </div>
                   </div>
                   <div
-                    className={classNames(projectcss.all, sty.freeBox__pLumv)}
+                    className={classNames(projectcss.all, sty.freeBox__qQpdj)}
                   >
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__m8SEh)}
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.a__q99j7,
+                        sty.link__bkz9
+                      )}
+                      component={Link}
+                      legacyBehavior={false}
+                      platform={"nextjs"}
                     >
-                      <PlasmicLink__
+                      <span
                         className={classNames(
                           projectcss.all,
-                          projectcss.a,
-                          projectcss.a__q99j7,
-                          sty.link__ecyGj
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__ajoM
                         )}
-                        component={Link}
-                        legacyBehavior={false}
-                        platform={"nextjs"}
                       >
-                        <span
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.span,
-                            projectcss.span__q99j7,
-                            projectcss.__wab_text,
-                            sty.span__nheD9
-                          )}
-                        >
-                          {"Program"}
-                        </span>
-                      </PlasmicLink__>
-                    </div>
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__djCsm)}
+                        {"Program"}
+                      </span>
+                    </PlasmicLink__>
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.a__q99j7,
+                        sty.link__ivV
+                      )}
+                      component={Link}
+                      legacyBehavior={false}
+                      platform={"nextjs"}
                     >
-                      <PlasmicLink__
+                      <span
                         className={classNames(
                           projectcss.all,
-                          projectcss.a,
-                          projectcss.a__q99j7,
-                          sty.link__rlbBl
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__ul7Ku
                         )}
-                        component={Link}
-                        legacyBehavior={false}
-                        platform={"nextjs"}
                       >
-                        <span
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.span,
-                            projectcss.span__q99j7,
-                            projectcss.__wab_text,
-                            sty.span__cphHp
-                          )}
-                        >
-                          {"Benefits"}
-                        </span>
-                      </PlasmicLink__>
-                    </div>
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__fgCd4)}
+                        {"Benefits"}
+                      </span>
+                    </PlasmicLink__>
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.a__q99j7,
+                        sty.link__fgWkl
+                      )}
+                      component={Link}
+                      legacyBehavior={false}
+                      platform={"nextjs"}
                     >
-                      <PlasmicLink__
+                      <span
                         className={classNames(
                           projectcss.all,
-                          projectcss.a,
-                          projectcss.a__q99j7,
-                          sty.link__klCiX
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__biMl
                         )}
-                        component={Link}
-                        legacyBehavior={false}
-                        platform={"nextjs"}
                       >
-                        <span
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.span,
-                            projectcss.span__q99j7,
-                            projectcss.__wab_text,
-                            sty.span__kIMeq
-                          )}
-                        >
-                          {"Timeline"}
-                        </span>
-                      </PlasmicLink__>
-                    </div>
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__qbRcQ)}
+                        {"Timeline"}
+                      </span>
+                    </PlasmicLink__>
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.a__q99j7,
+                        sty.link__nNnUk
+                      )}
+                      component={Link}
+                      legacyBehavior={false}
+                      platform={"nextjs"}
                     >
-                      <PlasmicLink__
+                      <span
                         className={classNames(
                           projectcss.all,
-                          projectcss.a,
-                          projectcss.a__q99j7,
-                          sty.link__t1IQl
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span___6Rr5
                         )}
-                        component={Link}
-                        legacyBehavior={false}
-                        platform={"nextjs"}
                       >
-                        <span
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.span,
-                            projectcss.span__q99j7,
-                            projectcss.__wab_text,
-                            sty.span__v6XpM
-                          )}
-                        >
-                          {"Apply"}
-                        </span>
-                      </PlasmicLink__>
-                    </div>
+                        {"Mentors"}
+                      </span>
+                    </PlasmicLink__>
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.a__q99j7,
+                        sty.link__hPjKm
+                      )}
+                      component={Link}
+                      legacyBehavior={false}
+                      platform={"nextjs"}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__d1Fcb
+                        )}
+                      >
+                        {"FAQ"}
+                      </span>
+                    </PlasmicLink__>
                   </div>
                   <PlasmicLink__
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
                       projectcss.a__q99j7,
-                      sty.link__hPkFz
+                      sty.link__iHa62
                     )}
                     component={Link}
                     legacyBehavior={false}
@@ -354,56 +501,369 @@ function PlasmicHome__RenderFunc(props: {
                         projectcss.span,
                         projectcss.span__q99j7,
                         projectcss.__wab_text,
-                        sty.span__jo4Ql
+                        sty.span___8X47G
                       )}
                     >
                       {"Apply Now"}
                     </span>
                   </PlasmicLink__>
-                </nav>
+                </div>
               </div>
-            </header>
-            <section
-              className={classNames(projectcss.all, sty.section___3MJi6)}
-            >
-              <div className={classNames(projectcss.all, sty.freeBox__mvh9H)}>
-                <h1
-                  data-plasmic-name={"h1"}
-                  data-plasmic-override={overrides.h1}
+            </nav>
+            <section className={classNames(projectcss.all, sty.section__zHr0K)}>
+              <div className={classNames(projectcss.all, sty.freeBox__yrpL1)}>
+                <div
+                  className={classNames(projectcss.all, sty.freeBox___6BxFy)}
+                >
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__prJmH)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__e29O)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__ikTzT
+                        )}
+                      >
+                        {
+                          "\ud83d\uddd7 Applications Open \u00b7 Deadline June 1, 2026"
+                        }
+                      </span>
+                    </div>
+                    <h1
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h1,
+                        projectcss.h1__q99j7,
+                        projectcss.__wab_text,
+                        sty.h1__pPHoY
+                      )}
+                    >
+                      {"Silkroad Fellowship Program"}
+                    </h1>
+                    <p
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.p,
+                        projectcss.p__q99j7,
+                        projectcss.__wab_text,
+                        sty.p__fxFb
+                      )}
+                    >
+                      {
+                        "A 6-week immersive experience at the heart of Silicon Valley. Intern at leading startups, get mentored by Stanford and Harvard graduates, and explore the epicenter of global technology."
+                      }
+                    </p>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__xPeJu)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__bBDgw
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__q1Lv9
+                          )}
+                        >
+                          {"\ud83c\udfe0 Housing Included"}
+                        </span>
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__qhZr
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__qc9H9
+                          )}
+                        >
+                          {"\ud83c\udf7d\ufe0f Meals Provided"}
+                        </span>
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__cBbgV
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span___5Dm
+                          )}
+                        >
+                          {"\ud83d\udcb0 Stipend"}
+                        </span>
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__d5A11
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__z6HFw
+                          )}
+                        >
+                          {"\ud83c\udf09 Silicon Valley"}
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__iw1Gh)}
+                    >
+                      <PlasmicLink__
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          projectcss.a__q99j7,
+                          sty.link__ubDct
+                        )}
+                        component={Link}
+                        legacyBehavior={false}
+                        platform={"nextjs"}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__xOef
+                          )}
+                        >
+                          {"Apply Now"}
+                        </span>
+                      </PlasmicLink__>
+                      <PlasmicLink__
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          projectcss.a__q99j7,
+                          sty.link__nR2Y
+                        )}
+                        component={Link}
+                        legacyBehavior={false}
+                        platform={"nextjs"}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span___3Vjao
+                          )}
+                        >
+                          {"Learn More"}
+                        </span>
+                      </PlasmicLink__>
+                    </div>
+                    <p
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.p,
+                        projectcss.p__q99j7,
+                        projectcss.__wab_text,
+                        sty.p__cAowh
+                      )}
+                    >
+                      {"\u23f0 Application Deadline: June 1, 2026"}
+                    </p>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__g7Y86)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__iCwQa)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__wxtd5
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__lk8
+                          )}
+                        >
+                          {"6"}
+                        </span>
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__vuX1P
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span___9FSvf
+                          )}
+                        >
+                          {"Weeks"}
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox___1Mgr)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__h9IeF
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__p3LpO
+                          )}
+                        >
+                          {"July"}
+                        </span>
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__cnX86
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__legs3
+                          )}
+                        >
+                          {"Starts"}
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___6CZrj
+                      )}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__oHlqr
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__laejn
+                          )}
+                        >
+                          {"Aug"}
+                        </span>
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__h3Srx
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__ck1Ja
+                          )}
+                        >
+                          {"Ends"}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section className={classNames(projectcss.all, sty.section__qgvRv)}>
+              <div className={classNames(projectcss.all, sty.freeBox__pWtmb)}>
+                <span
                   className={classNames(
                     projectcss.all,
-                    projectcss.h1,
-                    projectcss.h1__q99j7,
+                    projectcss.span,
+                    projectcss.span__q99j7,
                     projectcss.__wab_text,
-                    sty.h1
+                    sty.span__g0D8R
                   )}
                 >
-                  {"Silkroad Fellowship Program"}
-                </h1>
-                <p
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.p,
-                    projectcss.p__q99j7,
-                    projectcss.__wab_text,
-                    sty.p__uftf9
-                  )}
-                >
-                  {
-                    "6-week intensive program in Silicon Valley \u2022 July - August 2024 \u2022 Full immersion in startup ecosystem with housing, meals, and stipend included"
-                  }
-                </p>
-                <div className={classNames(projectcss.all, sty.freeBox__xc2SZ)}>
-                  <PlasmicLink__
+                  {"In partnership with world-class institutions"}
+                </span>
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__sKjrl)}>
+                <div className={classNames(projectcss.all, sty.freeBox__g9OX)}>
+                  <span
                     className={classNames(
                       projectcss.all,
-                      projectcss.a,
-                      projectcss.a__q99j7,
-                      sty.link___0Xu4J
+                      projectcss.span,
+                      projectcss.span__q99j7,
+                      projectcss.__wab_text,
+                      sty.span__vFaF4
                     )}
-                    component={Link}
-                    legacyBehavior={false}
-                    platform={"nextjs"}
+                  >
+                    {
+                      "Stanford University \u00b7 Harvard University \u00b7 McKinsey & Company \u00b7 Princeton University \u00b7 University of Sydney \u00b7 University of South Florida \u00b7 City University London \u00b7 San Francisco Bay University \u00b7 UNICEF \u00b7 Uzum \u00b7 Astana Hub \u00b7 Ingenium School \u00b7 Silkroad Innovation Hub \u00b7 Stanford University \u00b7 Harvard University \u00b7 McKinsey & Company \u00b7 Princeton University \u00b7 University of Sydney \u00b7 University of South Florida \u00b7 City University London \u00b7 San Francisco Bay University \u00b7 UNICEF \u00b7 Uzum \u00b7 Astana Hub \u00b7 Ingenium School \u00b7 Silkroad Innovation Hub"
+                    }
+                  </span>
+                </div>
+              </div>
+            </section>
+            <section className={classNames(projectcss.all, sty.section__aPkoS)}>
+              <div className={classNames(projectcss.all, sty.freeBox__iAhLe)}>
+                <div className={classNames(projectcss.all, sty.freeBox__uqxaM)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__v6D9T)}
                   >
                     <span
                       className={classNames(
@@ -411,62 +871,55 @@ function PlasmicHome__RenderFunc(props: {
                         projectcss.span,
                         projectcss.span__q99j7,
                         projectcss.__wab_text,
-                        sty.span__t3Wvl
+                        sty.span___3SlFn
                       )}
                     >
-                      {"Apply Now"}
+                      {"What You Get"}
                     </span>
-                  </PlasmicLink__>
-                  <PlasmicLink__
+                  </div>
+                  <h2
                     className={classNames(
                       projectcss.all,
-                      projectcss.a,
-                      projectcss.a__q99j7,
-                      sty.link___1K4Ep
+                      projectcss.h2,
+                      projectcss.h2__q99j7,
+                      projectcss.__wab_text,
+                      sty.h2__nTmAw
                     )}
-                    component={Link}
-                    legacyBehavior={false}
-                    platform={"nextjs"}
                   >
-                    <span
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.span,
-                        projectcss.span__q99j7,
-                        projectcss.__wab_text,
-                        sty.span__chP5P
-                      )}
-                    >
-                      {"Learn More"}
-                    </span>
-                  </PlasmicLink__>
+                    {"Everything You Need to Thrive"}
+                  </h2>
+                  <p
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.p,
+                      projectcss.p__q99j7,
+                      projectcss.__wab_text,
+                      sty.p__tb5B2
+                    )}
+                  >
+                    {
+                      "Fellows receive comprehensive support throughout the full 6-week program \u2014 so you can focus entirely on growing."
+                    }
+                  </p>
                 </div>
-              </div>
-            </section>
-            <section className={classNames(projectcss.all, sty.section__eRyJe)}>
-              <div className={classNames(projectcss.all, sty.freeBox__k5Uhb)}>
-                <h2
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h2,
-                    projectcss.h2__q99j7,
-                    projectcss.__wab_text,
-                    sty.h2___9HsN9
-                  )}
-                >
-                  {"Transform Your Future in Silicon Valley"}
-                </h2>
-                <div className={classNames(projectcss.all, sty.freeBox__cCkgy)}>
+                <div className={classNames(projectcss.all, sty.freeBox__iy5Yt)}>
                   <div
-                    className={classNames(projectcss.all, sty.freeBox__sQhp4)}
+                    className={classNames(projectcss.all, sty.freeBox__vO4X)}
                   >
                     <div
-                      className={classNames(projectcss.all, sty.freeBox__h1Ho9)}
+                      className={classNames(projectcss.all, sty.freeBox__slIh)}
                     >
-                      <Icon4Icon
-                        className={classNames(projectcss.all, sty.svg__vBxOw)}
-                        role={"img"}
-                      />
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__zdGSm
+                        )}
+                      >
+                        {"\ud83c\udfe0"}
+                      </span>
                     </div>
                     <h3
                       className={classNames(
@@ -474,134 +927,7 @@ function PlasmicHome__RenderFunc(props: {
                         projectcss.h3,
                         projectcss.h3__q99j7,
                         projectcss.__wab_text,
-                        sty.h3__o0VcB
-                      )}
-                    >
-                      {"6-Week Intensive"}
-                    </h3>
-                    <p
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.p,
-                        projectcss.p__q99j7,
-                        projectcss.__wab_text,
-                        sty.p__vq1Z7
-                      )}
-                    >
-                      {
-                        "Comprehensive program running from July to August, designed to accelerate your entrepreneurial journey in the heart of Silicon Valley."
-                      }
-                    </p>
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__pbqLh)}
-                  >
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__eWiqG)}
-                    >
-                      <Icon8Icon
-                        className={classNames(projectcss.all, sty.svg___0MYz)}
-                        role={"img"}
-                      />
-                    </div>
-                    <h3
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.h3,
-                        projectcss.h3__q99j7,
-                        projectcss.__wab_text,
-                        sty.h3__fNJtR
-                      )}
-                    >
-                      {"Full Support"}
-                    </h3>
-                    <p
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.p,
-                        projectcss.p__q99j7,
-                        projectcss.__wab_text,
-                        sty.p__byOr
-                      )}
-                    >
-                      {
-                        "Complete package including housing, daily lunch, stipend, and mentorship from Silicon Valley veterans and successful entrepreneurs."
-                      }
-                    </p>
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__shEIc)}
-                  >
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__pRqu)}
-                    >
-                      <Icon7Icon
-                        className={classNames(projectcss.all, sty.svg__hptZ)}
-                        role={"img"}
-                      />
-                    </div>
-                    <h3
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.h3,
-                        projectcss.h3__q99j7,
-                        projectcss.__wab_text,
-                        sty.h3__v55Jo
-                      )}
-                    >
-                      {"Silicon Valley Immersion"}
-                    </h3>
-                    <p
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.p,
-                        projectcss.p__q99j7,
-                        projectcss.__wab_text,
-                        sty.p__sZfBt
-                      )}
-                    >
-                      {
-                        "Direct access to the startup ecosystem, networking events, company visits, and connections with top-tier investors and founders."
-                      }
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section
-              className={classNames(projectcss.all, sty.section___785Nc)}
-            >
-              <div className={classNames(projectcss.all, sty.freeBox___2Kffr)}>
-                <h2
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h2,
-                    projectcss.h2__q99j7,
-                    projectcss.__wab_text,
-                    sty.h2__mgXv
-                  )}
-                >
-                  {"What We Provide"}
-                </h2>
-                <div className={classNames(projectcss.all, sty.freeBox__pIa4W)}>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__dg5Ce)}
-                  >
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__qiRKp)}
-                    >
-                      <Icon5Icon
-                        className={classNames(projectcss.all, sty.svg__neQk)}
-                        role={"img"}
-                      />
-                    </div>
-                    <h3
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.h3,
-                        projectcss.h3__q99j7,
-                        projectcss.__wab_text,
-                        sty.h3___93TS
+                        sty.h3__s2Qw
                       )}
                     >
                       {"Housing"}
@@ -612,24 +938,31 @@ function PlasmicHome__RenderFunc(props: {
                         projectcss.p,
                         projectcss.p__q99j7,
                         projectcss.__wab_text,
-                        sty.p___1XWmo
+                        sty.p__m0Jvu
                       )}
                     >
                       {
-                        "Fully furnished accommodation in premium locations close to major tech companies and startup hubs."
+                        "Fully furnished accommodations provided for the entire 6-week program. You arrive and focus on learning \u2014 we handle the rest."
                       }
                     </p>
                   </div>
                   <div
-                    className={classNames(projectcss.all, sty.freeBox__zj4B2)}
+                    className={classNames(projectcss.all, sty.freeBox__lhnRh)}
                   >
                     <div
-                      className={classNames(projectcss.all, sty.freeBox__bjNmJ)}
+                      className={classNames(projectcss.all, sty.freeBox__lNvg)}
                     >
-                      <Icon6Icon
-                        className={classNames(projectcss.all, sty.svg__j64Z)}
-                        role={"img"}
-                      />
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span___3SfHk
+                        )}
+                      >
+                        {"\ud83c\udf7d\ufe0f"}
+                      </span>
                     </div>
                     <h3
                       className={classNames(
@@ -637,10 +970,10 @@ function PlasmicHome__RenderFunc(props: {
                         projectcss.h3,
                         projectcss.h3__q99j7,
                         projectcss.__wab_text,
-                        sty.h3___4Grr
+                        sty.h3__xmSsT
                       )}
                     >
-                      {"Daily Lunch"}
+                      {"Meals (Lunch)"}
                     </h3>
                     <p
                       className={classNames(
@@ -648,24 +981,31 @@ function PlasmicHome__RenderFunc(props: {
                         projectcss.p,
                         projectcss.p__q99j7,
                         projectcss.__wab_text,
-                        sty.p__uhQ
+                        sty.p__cen9Q
                       )}
                     >
                       {
-                        "Nutritious lunch provided every day, allowing you to focus on learning and networking without meal planning."
+                        "Daily lunch provided on all working days to keep you energized, connected with peers, and focused on what matters."
                       }
                     </p>
                   </div>
                   <div
-                    className={classNames(projectcss.all, sty.freeBox__mdBdi)}
+                    className={classNames(projectcss.all, sty.freeBox__bat3O)}
                   >
                     <div
-                      className={classNames(projectcss.all, sty.freeBox__z74E)}
+                      className={classNames(projectcss.all, sty.freeBox__cqM1)}
                     >
-                      <Icon10Icon
-                        className={classNames(projectcss.all, sty.svg___26SrH)}
-                        role={"img"}
-                      />
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__mSn16
+                        )}
+                      >
+                        {"\ud83d\udcb0"}
+                      </span>
                     </div>
                     <h3
                       className={classNames(
@@ -673,7 +1013,7 @@ function PlasmicHome__RenderFunc(props: {
                         projectcss.h3,
                         projectcss.h3__q99j7,
                         projectcss.__wab_text,
-                        sty.h3__zlwkb
+                        sty.h3__zwWgi
                       )}
                     >
                       {"Stipend"}
@@ -684,24 +1024,31 @@ function PlasmicHome__RenderFunc(props: {
                         projectcss.p,
                         projectcss.p__q99j7,
                         projectcss.__wab_text,
-                        sty.p__oK2B
+                        sty.p__bhAok
                       )}
                     >
                       {
-                        "Financial support to cover your living expenses, allowing you to focus entirely on the program experience."
+                        "Receive a monthly stipend to support your experience and cover personal day-to-day expenses throughout the fellowship."
                       }
                     </p>
                   </div>
                   <div
-                    className={classNames(projectcss.all, sty.freeBox__eZCs6)}
+                    className={classNames(projectcss.all, sty.freeBox__tAe8I)}
                   >
                     <div
-                      className={classNames(projectcss.all, sty.freeBox__qau8W)}
+                      className={classNames(projectcss.all, sty.freeBox__ekaPe)}
                     >
-                      <Icon3Icon
-                        className={classNames(projectcss.all, sty.svg___9U49P)}
-                        role={"img"}
-                      />
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__orGsi
+                        )}
+                      >
+                        {"\ud83c\udf09"}
+                      </span>
                     </div>
                     <h3
                       className={classNames(
@@ -709,10 +1056,10 @@ function PlasmicHome__RenderFunc(props: {
                         projectcss.h3,
                         projectcss.h3__q99j7,
                         projectcss.__wab_text,
-                        sty.h3__vlqab
+                        sty.h3__z0Niv
                       )}
                     >
-                      {"Mentorship"}
+                      {"Silicon Valley Immersion"}
                     </h3>
                     <p
                       className={classNames(
@@ -720,24 +1067,34 @@ function PlasmicHome__RenderFunc(props: {
                         projectcss.p,
                         projectcss.p__q99j7,
                         projectcss.__wab_text,
-                        sty.p__ptov1
+                        sty.p___97OpF
                       )}
                     >
                       {
-                        "One-on-one guidance from successful entrepreneurs, VCs, and industry leaders throughout the program."
+                        "Visit Google, Meta, and Apple campuses. Attend lectures from tech leaders. Experience the epicenter of global innovation first-hand."
                       }
                     </p>
                   </div>
                   <div
-                    className={classNames(projectcss.all, sty.freeBox__pHbZ7)}
+                    className={classNames(projectcss.all, sty.freeBox__gr5Lh)}
                   >
                     <div
-                      className={classNames(projectcss.all, sty.freeBox__mfIjR)}
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___9ZLqU
+                      )}
                     >
-                      <Icon9Icon
-                        className={classNames(projectcss.all, sty.svg__kZgx6)}
-                        role={"img"}
-                      />
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__zQsc9
+                        )}
+                      >
+                        {"\ud83c\udf93"}
+                      </span>
                     </div>
                     <h3
                       className={classNames(
@@ -745,10 +1102,10 @@ function PlasmicHome__RenderFunc(props: {
                         projectcss.h3,
                         projectcss.h3__q99j7,
                         projectcss.__wab_text,
-                        sty.h3__gYLf
+                        sty.h3__z3Vu
                       )}
                     >
-                      {"Network Access"}
+                      {"Expert Mentorship"}
                     </h3>
                     <p
                       className={classNames(
@@ -756,24 +1113,34 @@ function PlasmicHome__RenderFunc(props: {
                         projectcss.p,
                         projectcss.p__q99j7,
                         projectcss.__wab_text,
-                        sty.p__rcwGm
+                        sty.p__qb5Ay
                       )}
                     >
                       {
-                        "Exclusive access to Silicon Valley's startup ecosystem, including investor meetings and company visits."
+                        "Weekly 1-on-1 guidance from graduates of Stanford, Harvard, and MIT \u2014 people who have been where you want to go."
                       }
                     </p>
                   </div>
                   <div
-                    className={classNames(projectcss.all, sty.freeBox__zv2Ab)}
+                    className={classNames(projectcss.all, sty.freeBox__tiDoP)}
                   >
                     <div
-                      className={classNames(projectcss.all, sty.freeBox__zkHal)}
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___0Gupt
+                      )}
                     >
-                      <Icon2Icon
-                        className={classNames(projectcss.all, sty.svg__xfHoY)}
-                        role={"img"}
-                      />
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__fiWy5
+                        )}
+                      >
+                        {"\ud83d\udcdc"}
+                      </span>
                     </div>
                     <h3
                       className={classNames(
@@ -781,10 +1148,10 @@ function PlasmicHome__RenderFunc(props: {
                         projectcss.h3,
                         projectcss.h3__q99j7,
                         projectcss.__wab_text,
-                        sty.h3__rtUyR
+                        sty.h3__g78Ql
                       )}
                     >
-                      {"Workshops & Events"}
+                      {"Certificate & Letter"}
                     </h3>
                     <p
                       className={classNames(
@@ -792,44 +1159,3386 @@ function PlasmicHome__RenderFunc(props: {
                         projectcss.p,
                         projectcss.p__q99j7,
                         projectcss.__wab_text,
-                        sty.p__ztWKl
+                        sty.p__to8Mp
                       )}
                     >
                       {
-                        "Intensive workshops on fundraising, product development, marketing, and scaling your startup."
+                        "Graduate with an official certificate and a personalized recommendation letter to strengthen your university or job applications."
                       }
                     </p>
                   </div>
                 </div>
               </div>
             </section>
-            <section className={classNames(projectcss.all, sty.section__apeu)}>
-              <div className={classNames(projectcss.all, sty.freeBox__dLcwO)}>
-                <h2
+            <section
+              className={classNames(projectcss.all, sty.section___3NUqq)}
+            >
+              <div className={classNames(projectcss.all, sty.freeBox__yPvEz)}>
+                <div className={classNames(projectcss.all, sty.freeBox___5Dp6)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__qRgWp)}
+                  >
+                    <span
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.span,
+                        projectcss.span__q99j7,
+                        projectcss.__wab_text,
+                        sty.span___8Tuq5
+                      )}
+                    >
+                      {"Program Structure"}
+                    </span>
+                  </div>
+                  <h2
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h2,
+                      projectcss.h2__q99j7,
+                      projectcss.__wab_text,
+                      sty.h2__zsBpn
+                    )}
+                  >
+                    {"6 Weeks. Two Transformative Experiences."}
+                  </h2>
+                  <p
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.p,
+                      projectcss.p__q99j7,
+                      projectcss.__wab_text,
+                      sty.p__vQWs
+                    )}
+                  >
+                    {
+                      "Each half of the fellowship is designed to push your limits and expand your worldview."
+                    }
+                  </p>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__vIqbM)}
+                  >
+                    <section
+                      className={classNames(projectcss.all, sty.section__u6Lmo)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__qvJs6
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__hzS6V
+                          )}
+                        >
+                          <h1
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.h1,
+                              projectcss.h1__q99j7,
+                              projectcss.__wab_text,
+                              sty.h1__dft8N
+                            )}
+                          >
+                            {"Silk Road Fellowship Program"}
+                          </h1>
+                          <p
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.p,
+                              projectcss.p__q99j7,
+                              projectcss.__wab_text,
+                              sty.p__vYBgP
+                            )}
+                          >
+                            {
+                              "Empowering the next generation of leaders to bridge cultures, foster innovation, and create lasting impact across the historic Silk Road regions"
+                            }
+                          </p>
+                          <PlasmicLink__
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.a,
+                              projectcss.a__q99j7,
+                              sty.link__nFeZu
+                            )}
+                            component={Link}
+                            legacyBehavior={false}
+                            platform={"nextjs"}
+                          >
+                            <span
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.span,
+                                projectcss.span__q99j7,
+                                projectcss.__wab_text,
+                                sty.span__tLlge
+                              )}
+                            >
+                              {"Apply Now"}
+                            </span>
+                          </PlasmicLink__>
+                        </div>
+                      </div>
+                    </section>
+                    <section
+                      className={classNames(projectcss.all, sty.section__dmGNf)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__byPk4
+                        )}
+                      >
+                        <h2
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.h2,
+                            projectcss.h2__q99j7,
+                            projectcss.__wab_text,
+                            sty.h2___4X8T
+                          )}
+                        >
+                          {"Program Tracks"}
+                        </h2>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__pJ4Q9
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__hpVgJ
+                            )}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox___8D8EV
+                              )}
+                            >
+                              <Icon5Icon
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.svg__oSi1K
+                                )}
+                                role={"img"}
+                              />
+                            </div>
+                            <h3
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.h3,
+                                projectcss.h3__q99j7,
+                                projectcss.__wab_text,
+                                sty.h3__mZasH
+                              )}
+                            >
+                              {"Cultural Exchange Track"}
+                            </h3>
+                            <p
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.p,
+                                projectcss.p__q99j7,
+                                projectcss.__wab_text,
+                                sty.p__czFor
+                              )}
+                            >
+                              {
+                                "Immerse yourself in diverse cultures along the Silk Road, building bridges between East and West through meaningful cultural exchange programs."
+                              }
+                            </p>
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__cJvAh
+                              )}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.freeBox__fgi98
+                                )}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.freeBox__kvDfw
+                                  )}
+                                >
+                                  <Icon2Icon
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.svg___9SUes
+                                    )}
+                                    role={"img"}
+                                  />
+                                </div>
+                                <span
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.span,
+                                    projectcss.span__q99j7,
+                                    projectcss.__wab_text,
+                                    sty.span___0PaoN
+                                  )}
+                                >
+                                  {"6-month cultural immersion program"}
+                                </span>
+                              </div>
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.freeBox___9S9Xq
+                                )}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.freeBox__knn12
+                                  )}
+                                >
+                                  <Icon2Icon
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.svg__kvUt3
+                                    )}
+                                    role={"img"}
+                                  />
+                                </div>
+                                <span
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.span,
+                                    projectcss.span__q99j7,
+                                    projectcss.__wab_text,
+                                    sty.span__vwblA
+                                  )}
+                                >
+                                  {"Language learning opportunities"}
+                                </span>
+                              </div>
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.freeBox__a3HKt
+                                )}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.freeBox___4Sg29
+                                  )}
+                                >
+                                  <Icon2Icon
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.svg___7GDmX
+                                    )}
+                                    role={"img"}
+                                  />
+                                </div>
+                                <span
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.span,
+                                    projectcss.span__q99j7,
+                                    projectcss.__wab_text,
+                                    sty.span__ryxZ0
+                                  )}
+                                >
+                                  {"Cross-cultural project collaboration"}
+                                </span>
+                              </div>
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.freeBox__rqwdD
+                                )}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.freeBox__tRUs1
+                                  )}
+                                >
+                                  <Icon2Icon
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.svg__wOr31
+                                    )}
+                                    role={"img"}
+                                  />
+                                </div>
+                                <span
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.span,
+                                    projectcss.span__q99j7,
+                                    projectcss.__wab_text,
+                                    sty.span__odIlq
+                                  )}
+                                >
+                                  {"Mentorship from cultural leaders"}
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__f45Cv
+                            )}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__qk6O
+                              )}
+                            >
+                              <Icon3Icon
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.svg__b98LW
+                                )}
+                                role={"img"}
+                              />
+                            </div>
+                            <h3
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.h3,
+                                projectcss.h3__q99j7,
+                                projectcss.__wab_text,
+                                sty.h3__fHjMr
+                              )}
+                            >
+                              {"Innovation & Technology Track"}
+                            </h3>
+                            <p
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.p,
+                                projectcss.p__q99j7,
+                                projectcss.__wab_text,
+                                sty.p__kLzmT
+                              )}
+                            >
+                              {
+                                "Drive technological advancement and innovation across Silk Road regions, focusing on sustainable solutions and digital transformation."
+                              }
+                            </p>
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__xwJUj
+                              )}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.freeBox___62BX7
+                                )}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.freeBox__qwtf9
+                                  )}
+                                >
+                                  <Icon2Icon
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.svg__biJcE
+                                    )}
+                                    role={"img"}
+                                  />
+                                </div>
+                                <span
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.span,
+                                    projectcss.span__q99j7,
+                                    projectcss.__wab_text,
+                                    sty.span__tyNCu
+                                  )}
+                                >
+                                  {"Tech startup incubation program"}
+                                </span>
+                              </div>
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.freeBox__vpxMj
+                                )}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.freeBox__lfDq
+                                  )}
+                                >
+                                  <Icon2Icon
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.svg__jobbn
+                                    )}
+                                    role={"img"}
+                                  />
+                                </div>
+                                <span
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.span,
+                                    projectcss.span__q99j7,
+                                    projectcss.__wab_text,
+                                    sty.span__kc8W8
+                                  )}
+                                >
+                                  {"Access to innovation labs"}
+                                </span>
+                              </div>
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.freeBox__mGere
+                                )}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.freeBox___58YJn
+                                  )}
+                                >
+                                  <Icon2Icon
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.svg__nLt7R
+                                    )}
+                                    role={"img"}
+                                  />
+                                </div>
+                                <span
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.span,
+                                    projectcss.span__q99j7,
+                                    projectcss.__wab_text,
+                                    sty.span__bQrqX
+                                  )}
+                                >
+                                  {"Funding opportunities up to $50K"}
+                                </span>
+                              </div>
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.freeBox__gkFra
+                                )}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.freeBox__kUzUn
+                                  )}
+                                >
+                                  <Icon2Icon
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.svg__evXwZ
+                                    )}
+                                    role={"img"}
+                                  />
+                                </div>
+                                <span
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.span,
+                                    projectcss.span__q99j7,
+                                    projectcss.__wab_text,
+                                    sty.span__indd8
+                                  )}
+                                >
+                                  {"Industry expert mentorship"}
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox___1U8U3
+                            )}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__qBj6
+                              )}
+                            >
+                              <Icon4Icon
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.svg__eBpBc
+                                )}
+                                role={"img"}
+                              />
+                            </div>
+                            <h3
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.h3,
+                                projectcss.h3__q99j7,
+                                projectcss.__wab_text,
+                                sty.h3___4Knuz
+                              )}
+                            >
+                              {"Leadership Development Track"}
+                            </h3>
+                            <p
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.p,
+                                projectcss.p__q99j7,
+                                projectcss.__wab_text,
+                                sty.p__fhi1K
+                              )}
+                            >
+                              {
+                                "Develop essential leadership skills and build networks to become influential leaders in your field and community across the Silk Road regions."
+                              }
+                            </p>
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox___0Qg4Z
+                              )}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.freeBox___9OUql
+                                )}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.freeBox__wLq7J
+                                  )}
+                                >
+                                  <Icon2Icon
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.svg___4H3X
+                                    )}
+                                    role={"img"}
+                                  />
+                                </div>
+                                <span
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.span,
+                                    projectcss.span__q99j7,
+                                    projectcss.__wab_text,
+                                    sty.span__jVx7G
+                                  )}
+                                >
+                                  {"Executive leadership training"}
+                                </span>
+                              </div>
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.freeBox__fyDVx
+                                )}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.freeBox__g4If4
+                                  )}
+                                >
+                                  <Icon2Icon
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.svg__ejMFg
+                                    )}
+                                    role={"img"}
+                                  />
+                                </div>
+                                <span
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.span,
+                                    projectcss.span__q99j7,
+                                    projectcss.__wab_text,
+                                    sty.span___2OjDe
+                                  )}
+                                >
+                                  {"Global networking opportunities"}
+                                </span>
+                              </div>
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.freeBox__yNr
+                                )}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.freeBox__uzj22
+                                  )}
+                                >
+                                  <Icon2Icon
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.svg__siCyd
+                                    )}
+                                    role={"img"}
+                                  />
+                                </div>
+                                <span
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.span,
+                                    projectcss.span__q99j7,
+                                    projectcss.__wab_text,
+                                    sty.span___03Azb
+                                  )}
+                                >
+                                  {"Policy and governance workshops"}
+                                </span>
+                              </div>
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.freeBox__cJzly
+                                )}
+                              >
+                                <div
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.freeBox___32OBz
+                                  )}
+                                >
+                                  <Icon2Icon
+                                    className={classNames(
+                                      projectcss.all,
+                                      sty.svg__jBgGx
+                                    )}
+                                    role={"img"}
+                                  />
+                                </div>
+                                <span
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.span,
+                                    projectcss.span__q99j7,
+                                    projectcss.__wab_text,
+                                    sty.span__kgta7
+                                  )}
+                                >
+                                  {"Alumni network access"}
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <section
+                      className={classNames(projectcss.all, sty.section__kqEgU)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__qZtbk
+                        )}
+                      >
+                        <h2
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.h2,
+                            projectcss.h2__q99j7,
+                            projectcss.__wab_text,
+                            sty.h2__whQ53
+                          )}
+                        >
+                          {"Ready to Begin Your Journey?"}
+                        </h2>
+                        <p
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.p,
+                            projectcss.p__q99j7,
+                            projectcss.__wab_text,
+                            sty.p___6QoCh
+                          )}
+                        >
+                          {
+                            "Join the next cohort of Silk Road Fellows and become part of a transformative experience that will shape your future and impact communities across continents."
+                          }
+                        </p>
+                        <form
+                          className={classNames(
+                            projectcss.all,
+                            sty.form__x0I8J
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__vFNa
+                            )}
+                          >
+                            <label
+                              className={classNames(
+                                projectcss.all,
+                                sty.label__gELm
+                              )}
+                            >
+                              <span
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.span,
+                                  projectcss.span__q99j7,
+                                  projectcss.__wab_text,
+                                  sty.span__dgNmW
+                                )}
+                              >
+                                {"Full Name"}
+                              </span>
+                            </label>
+                            <input
+                              data-plasmic-name={"textbox9"}
+                              data-plasmic-override={overrides.textbox9}
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.input,
+                                projectcss.input__q99j7,
+                                sty.textbox9
+                              )}
+                              onChange={async (...eventArgs: any) => {
+                                (e => {
+                                  generateStateOnChangeProp($state, [
+                                    "textbox9",
+                                    "value"
+                                  ])(e.target.value);
+                                }).apply(null, eventArgs);
+                              }}
+                              ref={ref => {
+                                $refs["textbox9"] = ref;
+                              }}
+                              value={
+                                generateStateValueProp($state, [
+                                  "textbox9",
+                                  "value"
+                                ]) ?? ""
+                              }
+                            />
+                          </div>
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__aX48
+                            )}
+                          >
+                            <label
+                              className={classNames(
+                                projectcss.all,
+                                sty.label__drNhb
+                              )}
+                            >
+                              <span
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.span,
+                                  projectcss.span__q99j7,
+                                  projectcss.__wab_text,
+                                  sty.span___41OQk
+                                )}
+                              >
+                                {"Email Address"}
+                              </span>
+                            </label>
+                            <input
+                              data-plasmic-name={"textbox10"}
+                              data-plasmic-override={overrides.textbox10}
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.input,
+                                projectcss.input__q99j7,
+                                sty.textbox10
+                              )}
+                              onChange={async (...eventArgs: any) => {
+                                (e => {
+                                  generateStateOnChangeProp($state, [
+                                    "textbox10",
+                                    "value"
+                                  ])(e.target.value);
+                                }).apply(null, eventArgs);
+                              }}
+                              ref={ref => {
+                                $refs["textbox10"] = ref;
+                              }}
+                              value={
+                                generateStateValueProp($state, [
+                                  "textbox10",
+                                  "value"
+                                ]) ?? ""
+                              }
+                            />
+                          </div>
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__qKvP3
+                            )}
+                          >
+                            <label
+                              className={classNames(
+                                projectcss.all,
+                                sty.label__q1JlV
+                              )}
+                            >
+                              <span
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.span,
+                                  projectcss.span__q99j7,
+                                  projectcss.__wab_text,
+                                  sty.span__i0Cyy
+                                )}
+                              >
+                                {"Country of Origin"}
+                              </span>
+                            </label>
+                            <input
+                              data-plasmic-name={"textbox11"}
+                              data-plasmic-override={overrides.textbox11}
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.input,
+                                projectcss.input__q99j7,
+                                sty.textbox11
+                              )}
+                              onChange={async (...eventArgs: any) => {
+                                (e => {
+                                  generateStateOnChangeProp($state, [
+                                    "textbox11",
+                                    "value"
+                                  ])(e.target.value);
+                                }).apply(null, eventArgs);
+                              }}
+                              ref={ref => {
+                                $refs["textbox11"] = ref;
+                              }}
+                              value={
+                                generateStateValueProp($state, [
+                                  "textbox11",
+                                  "value"
+                                ]) ?? ""
+                              }
+                            />
+                          </div>
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__yAdX4
+                            )}
+                          >
+                            <label
+                              className={classNames(
+                                projectcss.all,
+                                sty.label__nsGbt
+                              )}
+                            >
+                              <span
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.span,
+                                  projectcss.span__q99j7,
+                                  projectcss.__wab_text,
+                                  sty.span__kbkck
+                                )}
+                              >
+                                {"Preferred Track"}
+                              </span>
+                            </label>
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__hJzlP
+                              )}
+                            >
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.freeBox__nX9Xv
+                                )}
+                              >
+                                <span
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.span,
+                                    projectcss.span__q99j7,
+                                    projectcss.__wab_text,
+                                    sty.span__ye8T4
+                                  )}
+                                >
+                                  {"Select a track"}
+                                </span>
+                              </div>
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.freeBox___9Nvq5
+                                )}
+                              >
+                                <span
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.span,
+                                    projectcss.span__q99j7,
+                                    projectcss.__wab_text,
+                                    sty.span__hN2Cp
+                                  )}
+                                >
+                                  {"Cultural Exchange Track"}
+                                </span>
+                              </div>
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.freeBox__keFvg
+                                )}
+                              >
+                                <span
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.span,
+                                    projectcss.span__q99j7,
+                                    projectcss.__wab_text,
+                                    sty.span___4V9C3
+                                  )}
+                                >
+                                  {"Innovation & Technology Track"}
+                                </span>
+                              </div>
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.freeBox__fovXj
+                                )}
+                              >
+                                <span
+                                  className={classNames(
+                                    projectcss.all,
+                                    projectcss.span,
+                                    projectcss.span__q99j7,
+                                    projectcss.__wab_text,
+                                    sty.span__hspz
+                                  )}
+                                >
+                                  {"Leadership Development Track"}
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox___2DP
+                            )}
+                          >
+                            <label
+                              className={classNames(
+                                projectcss.all,
+                                sty.label___8NjTq
+                              )}
+                            >
+                              <span
+                                className={classNames(
+                                  projectcss.all,
+                                  projectcss.span,
+                                  projectcss.span__q99j7,
+                                  projectcss.__wab_text,
+                                  sty.span__fSsov
+                                )}
+                              >
+                                {
+                                  "Why do you want to join the Silk Road Fellowship?"
+                                }
+                              </span>
+                            </label>
+                            <textarea
+                              data-plasmic-name={"textarea3"}
+                              data-plasmic-override={overrides.textarea3}
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.textarea,
+                                projectcss.textarea__q99j7,
+                                sty.textarea3
+                              )}
+                              onChange={async (...eventArgs: any) => {
+                                (e => {
+                                  generateStateOnChangeProp($state, [
+                                    "textarea3",
+                                    "value"
+                                  ])(e.target.value);
+                                }).apply(null, eventArgs);
+                              }}
+                              ref={ref => {
+                                $refs["textarea3"] = ref;
+                              }}
+                              style={{ resize: "vertical" }}
+                              value={
+                                generateStateValueProp($state, [
+                                  "textarea3",
+                                  "value"
+                                ]) ?? ""
+                              }
+                            />
+                          </div>
+                          <button
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.button,
+                              projectcss.button__q99j7,
+                              sty.button__jz8Ej
+                            )}
+                          >
+                            <span
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.span,
+                                projectcss.span__q99j7,
+                                projectcss.__wab_text,
+                                sty.span__friM
+                              )}
+                            >
+                              {"Submit Application"}
+                            </span>
+                          </button>
+                        </form>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+                <div className={classNames(projectcss.all, sty.freeBox__ruGHg)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox___6JRv3)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__opA8L)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__yUsWg
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__wRak8
+                          )}
+                        >
+                          {"Weeks 1\u20133"}
+                        </span>
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__nf3PK
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__e085T
+                          )}
+                        >
+                          {"\ud83c\udf09"}
+                        </span>
+                      </div>
+                    </div>
+                    <h3
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h3,
+                        projectcss.h3__q99j7,
+                        projectcss.__wab_text,
+                        sty.h3__d37Ff
+                      )}
+                    >
+                      {"Silicon Valley Immersion"}
+                    </h3>
+                    <p
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.p,
+                        projectcss.p__q99j7,
+                        projectcss.__wab_text,
+                        sty.p__uXvVw
+                      )}
+                    >
+                      {
+                        "An unforgettable journey visiting the offices of Google, Meta, and Apple. Attend lectures from industry experts, meet startup founders, and absorb the culture of innovation."
+                      }
+                    </p>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___5NkLy
+                      )}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__dfhDc
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__xpDty
+                          )}
+                        >
+                          {"Campus tours: Stanford & Berkeley"}
+                        </span>
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__jNjw
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__zNZxg
+                          )}
+                        >
+                          {"Expert lectures from top tech companies"}
+                        </span>
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__rNTkN
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__zyUaa
+                          )}
+                        >
+                          {"Startup networking & ecosystem exploration"}
+                        </span>
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__pb7Ao
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__l8BCt
+                          )}
+                        >
+                          {"Workshops on entrepreneurship & career growth"}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__nfNw0)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___23EqE
+                      )}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__gq3P5
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__xB1Hd
+                          )}
+                        >
+                          {"Weeks 4\u20136"}
+                        </span>
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__kFre2
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span___8Wup8
+                          )}
+                        >
+                          {"\ud83d\udca1"}
+                        </span>
+                      </div>
+                    </div>
+                    <h3
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h3,
+                        projectcss.h3__q99j7,
+                        projectcss.__wab_text,
+                        sty.h3__yzSLp
+                      )}
+                    >
+                      {"Startup Fellowship"}
+                    </h3>
+                    <p
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.p,
+                        projectcss.p__q99j7,
+                        projectcss.__wab_text,
+                        sty.p__gaHiz
+                      )}
+                    >
+                      {
+                        "Work hands-on within a U.S.-based startup team. Contribute to real projects, understand business operations from the inside, and build skills that set you apart."
+                      }
+                    </p>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__sVnFl)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__qFlu
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span___5N7Fx
+                          )}
+                        >
+                          {"Embedded in a real startup team"}
+                        </span>
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__qmQxu
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__dyyXc
+                          )}
+                        >
+                          {"Work on live product & business challenges"}
+                        </span>
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__kHrQj
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__mFMx
+                          )}
+                        >
+                          {"Weekly 1-on-1 mentorship sessions"}
+                        </span>
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__nv1Mj
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__kgtR
+                          )}
+                        >
+                          {"Final project presentation to startup founders"}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section className={classNames(projectcss.all, sty.section___2BBr)}>
+              <div className={classNames(projectcss.all, sty.freeBox__v1IxF)}>
+                <div className={classNames(projectcss.all, sty.freeBox__rjvI)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__kQWgJ)}
+                  >
+                    <span
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.span,
+                        projectcss.span__q99j7,
+                        projectcss.__wab_text,
+                        sty.span__ytbcN
+                      )}
+                    >
+                      {"Program Timeline"}
+                    </span>
+                  </div>
+                  <h2
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h2,
+                      projectcss.h2__q99j7,
+                      projectcss.__wab_text,
+                      sty.h2__mDo42
+                    )}
+                  >
+                    {"Key Dates for 2026"}
+                  </h2>
+                  <p
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.p,
+                      projectcss.p__q99j7,
+                      projectcss.__wab_text,
+                      sty.p__vaJar
+                    )}
+                  >
+                    {
+                      "Mark your calendar \u2014 spots are limited and the deadline is firm."
+                    }
+                  </p>
+                </div>
+                <div className={classNames(projectcss.all, sty.freeBox__a0Wm6)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__vix1)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__sIove)}
+                    />
+
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__x7LfU)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span___2JwVt
+                        )}
+                      >
+                        {"June 1"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__pfZJj)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__fvygG
+                        )}
+                      >
+                        {"Application Deadline"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___9Fe2A
+                      )}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__t2DWa
+                        )}
+                      >
+                        {"Submit your application before this date"}
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox___4HfPc)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__fE8M)}
+                    />
+
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__gVmfd)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__vX2E1
+                        )}
+                      >
+                        {"June 15"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__fmbcq)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__gKql
+                        )}
+                      >
+                        {"Decisions Released"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__lU8ZS)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__etyv3
+                        )}
+                      >
+                        {"Accepted fellows are notified"}
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__on3CB)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__lYa6)}
+                    />
+
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__wgasR)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__zwqt5
+                        )}
+                      >
+                        {"July"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__aPr3E)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__exeb
+                        )}
+                      >
+                        {"Program Begins"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox___0M0)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__bxmTc
+                        )}
+                      >
+                        {"Kick-off week in Silicon Valley"}
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__sUgC)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__dK0Wr)}
+                    />
+
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__b8BnM)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__ih9Fm
+                        )}
+                      >
+                        {"August"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__zz6E)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__c3H9A
+                        )}
+                      >
+                        {"Program Ends"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__kNmMp)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__y5NyD
+                        )}
+                      >
+                        {"6-week journey concludes"}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section className={classNames(projectcss.all, sty.section__zal39)}>
+              <div className={classNames(projectcss.all, sty.freeBox___5S59A)}>
+                <div className={classNames(projectcss.all, sty.freeBox__vF92Q)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__jQxbO)}
+                  >
+                    <span
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.span,
+                        projectcss.span__q99j7,
+                        projectcss.__wab_text,
+                        sty.span__rzvFa
+                      )}
+                    >
+                      {"Our Team"}
+                    </span>
+                  </div>
+                  <h2
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h2,
+                      projectcss.h2__q99j7,
+                      projectcss.__wab_text,
+                      sty.h2___0YDkv
+                    )}
+                  >
+                    {"Mentors & Experts"}
+                  </h2>
+                  <p
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.p,
+                      projectcss.p__q99j7,
+                      projectcss.__wab_text,
+                      sty.p__gUn6J
+                    )}
+                  >
+                    {
+                      "The program is developed and led by graduates of the world's top universities who have navigated the journey you're about to begin."
+                    }
+                  </p>
+                </div>
+                <div className={classNames(projectcss.all, sty.freeBox__hRJbB)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__vUHd)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__bzr2S)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__mw5B5
+                        )}
+                      >
+                        {"AS"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__cEqan)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span___6YfbV
+                        )}
+                      >
+                        {"Aiya Seksenbayeva"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__e8O3T)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__lZx3O
+                        )}
+                      >
+                        {"Program Director"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__bSu)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__dPkNw
+                        )}
+                      >
+                        {"Stanford University"}
+                      </span>
+                    </div>
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.a__q99j7,
+                        sty.link__di6Je
+                      )}
+                      component={Link}
+                      legacyBehavior={false}
+                      platform={"nextjs"}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__wjoh
+                        )}
+                      >
+                        {"LinkedIn \u2192"}
+                      </span>
+                    </PlasmicLink__>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__waJf5)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__nikSl)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__hWmVh
+                        )}
+                      >
+                        {"AA"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__spy7V)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__zsqaZ
+                        )}
+                      >
+                        {"Asset Abdualiyev"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__uhPl8)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__e1HRv
+                        )}
+                      >
+                        {"Lead Mentor"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__eRTy)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__xM8Jk
+                        )}
+                      >
+                        {"Harvard University"}
+                      </span>
+                    </div>
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.a__q99j7,
+                        sty.link__dj5S8
+                      )}
+                      component={Link}
+                      legacyBehavior={false}
+                      platform={"nextjs"}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__bNgEr
+                        )}
+                      >
+                        {"LinkedIn \u2192"}
+                      </span>
+                    </PlasmicLink__>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__gn6Go)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__uDgfY)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__jgAn4
+                        )}
+                      >
+                        {"NA"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__cwGxq)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span___6SVz4
+                        )}
+                      >
+                        {"Naza Aibar"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__qQzL1)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__lDge4
+                        )}
+                      >
+                        {"Research Lead"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__fScme)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span___4MNcc
+                        )}
+                      >
+                        {"MIT"}
+                      </span>
+                    </div>
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.a__q99j7,
+                        sty.link___1Hkls
+                      )}
+                      component={Link}
+                      legacyBehavior={false}
+                      platform={"nextjs"}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__fBIoX
+                        )}
+                      >
+                        {"LinkedIn \u2192"}
+                      </span>
+                    </PlasmicLink__>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__jwIsN)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___5XoWj
+                      )}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__qLolM
+                        )}
+                      >
+                        {"SI"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__mnLgu)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__eldLe
+                        )}
+                      >
+                        {"Shokhrukh Ibragimov"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__ken3E)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__tbNd9
+                        )}
+                      >
+                        {"Startup Mentor"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__exca3)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span___56E4R
+                        )}
+                      >
+                        {"Princeton University"}
+                      </span>
+                    </div>
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.a__q99j7,
+                        sty.link__lwEei
+                      )}
+                      component={Link}
+                      legacyBehavior={false}
+                      platform={"nextjs"}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__qb74
+                        )}
+                      >
+                        {"LinkedIn \u2192"}
+                      </span>
+                    </PlasmicLink__>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section className={classNames(projectcss.all, sty.section__tGeRn)}>
+              <div className={classNames(projectcss.all, sty.freeBox__fNqE)}>
+                <div
+                  className={classNames(projectcss.all, sty.freeBox___2G4Ao)}
+                >
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__eklxG)}
+                  >
+                    <span
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.span,
+                        projectcss.span__q99j7,
+                        projectcss.__wab_text,
+                        sty.span___3Uzp9
+                      )}
+                    >
+                      {"Apply Now"}
+                    </span>
+                  </div>
+                  <h2
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h2,
+                      projectcss.h2__q99j7,
+                      projectcss.__wab_text,
+                      sty.h2__phobp
+                    )}
+                  >
+                    {"Start Your Silicon Valley Journey"}
+                  </h2>
+                  <p
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.p,
+                      projectcss.p__q99j7,
+                      projectcss.__wab_text,
+                      sty.p__yJjVo
+                    )}
+                  >
+                    {
+                      "Applications close June 1, 2026. Limited spots available \u2014 don't wait."
+                    }
+                  </p>
+                </div>
+                <form className={classNames(projectcss.all, sty.form__tqbHj)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__npI6Z)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__wJ5Ad)}
+                    >
+                      <label
+                        className={classNames(projectcss.all, sty.label__fr0Dh)}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__kVQcx
+                          )}
+                        >
+                          {"Full Name"}
+                        </span>
+                      </label>
+                      <input
+                        data-plasmic-name={"textbox"}
+                        data-plasmic-override={overrides.textbox}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.input,
+                          projectcss.input__q99j7,
+                          sty.textbox
+                        )}
+                        onChange={async (...eventArgs: any) => {
+                          (e => {
+                            generateStateOnChangeProp($state, [
+                              "textbox",
+                              "value"
+                            ])(e.target.value);
+                          }).apply(null, eventArgs);
+                        }}
+                        ref={ref => {
+                          $refs["textbox"] = ref;
+                        }}
+                        value={
+                          generateStateValueProp($state, [
+                            "textbox",
+                            "value"
+                          ]) ?? ""
+                        }
+                      />
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__z0YBk)}
+                    >
+                      <label
+                        className={classNames(projectcss.all, sty.label__lzXnQ)}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__oEIpS
+                          )}
+                        >
+                          {"Email Address"}
+                        </span>
+                      </label>
+                      <input
+                        data-plasmic-name={"textbox2"}
+                        data-plasmic-override={overrides.textbox2}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.input,
+                          projectcss.input__q99j7,
+                          sty.textbox2
+                        )}
+                        onChange={async (...eventArgs: any) => {
+                          (e => {
+                            generateStateOnChangeProp($state, [
+                              "textbox2",
+                              "value"
+                            ])(e.target.value);
+                          }).apply(null, eventArgs);
+                        }}
+                        ref={ref => {
+                          $refs["textbox2"] = ref;
+                        }}
+                        value={
+                          generateStateValueProp($state, [
+                            "textbox2",
+                            "value"
+                          ]) ?? ""
+                        }
+                      />
+                    </div>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__clH9)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__q0NX6)}
+                    >
+                      <label
+                        className={classNames(
+                          projectcss.all,
+                          sty.label___6T66V
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__a6D8L
+                          )}
+                        >
+                          {"Phone / WhatsApp"}
+                        </span>
+                      </label>
+                      <input
+                        data-plasmic-name={"textbox3"}
+                        data-plasmic-override={overrides.textbox3}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.input,
+                          projectcss.input__q99j7,
+                          sty.textbox3
+                        )}
+                        onChange={async (...eventArgs: any) => {
+                          (e => {
+                            generateStateOnChangeProp($state, [
+                              "textbox3",
+                              "value"
+                            ])(e.target.value);
+                          }).apply(null, eventArgs);
+                        }}
+                        ref={ref => {
+                          $refs["textbox3"] = ref;
+                        }}
+                        value={
+                          generateStateValueProp($state, [
+                            "textbox3",
+                            "value"
+                          ]) ?? ""
+                        }
+                      />
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__szRdI)}
+                    >
+                      <label
+                        className={classNames(projectcss.all, sty.label__kKrEx)}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__zbJKk
+                          )}
+                        >
+                          {"LinkedIn Profile URL"}
+                        </span>
+                      </label>
+                      <input
+                        data-plasmic-name={"textbox4"}
+                        data-plasmic-override={overrides.textbox4}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.input,
+                          projectcss.input__q99j7,
+                          sty.textbox4
+                        )}
+                        onChange={async (...eventArgs: any) => {
+                          (e => {
+                            generateStateOnChangeProp($state, [
+                              "textbox4",
+                              "value"
+                            ])(e.target.value);
+                          }).apply(null, eventArgs);
+                        }}
+                        ref={ref => {
+                          $refs["textbox4"] = ref;
+                        }}
+                        value={
+                          generateStateValueProp($state, [
+                            "textbox4",
+                            "value"
+                          ]) ?? ""
+                        }
+                      />
+                    </div>
+                  </div>
+                  <div className={classNames(projectcss.all, sty.freeBox__tf0)}>
+                    <label
+                      className={classNames(projectcss.all, sty.label___6YBpP)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__eoLpk
+                        )}
+                      >
+                        {
+                          "Tell us why you want to join the Silkroad Fellowship Program (optional)"
+                        }
+                      </span>
+                    </label>
+                    <textarea
+                      data-plasmic-name={"textarea"}
+                      data-plasmic-override={overrides.textarea}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.textarea,
+                        projectcss.textarea__q99j7,
+                        sty.textarea
+                      )}
+                      onChange={async (...eventArgs: any) => {
+                        (e => {
+                          generateStateOnChangeProp($state, [
+                            "textarea",
+                            "value"
+                          ])(e.target.value);
+                        }).apply(null, eventArgs);
+                      }}
+                      ref={ref => {
+                        $refs["textarea"] = ref;
+                      }}
+                      style={
+                        triggers.focus_textarea
+                          ? { resize: "vertical" }
+                          : { resize: "vertical" }
+                      }
+                      value={
+                        generateStateValueProp($state, ["textarea", "value"]) ??
+                        ""
+                      }
+                      data-plasmic-trigger-props={[triggerTextareaFocusProps]}
+                    />
+                  </div>
+                  <button
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.button,
+                      projectcss.button__q99j7,
+                      sty.button__rSvh
+                    )}
+                  >
+                    <span
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.span,
+                        projectcss.span__q99j7,
+                        projectcss.__wab_text,
+                        sty.span__z60Ol
+                      )}
+                    >
+                      {"Submit Application"}
+                    </span>
+                  </button>
+                </form>
+              </div>
+            </section>
+            <section className={classNames(projectcss.all, sty.section___1IVg)}>
+              <div className={classNames(projectcss.all, sty.freeBox__k8NQx)}>
+                <div className={classNames(projectcss.all, sty.freeBox___6QjB)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__ns6Uf)}
+                  >
+                    <span
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.span,
+                        projectcss.span__q99j7,
+                        projectcss.__wab_text,
+                        sty.span__dC4Nj
+                      )}
+                    >
+                      {"FAQ"}
+                    </span>
+                  </div>
+                  <h2
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h2,
+                      projectcss.h2__q99j7,
+                      projectcss.__wab_text,
+                      sty.h2__iLeDp
+                    )}
+                  >
+                    {"Frequently Asked Questions"}
+                  </h2>
+                </div>
+                <div className={classNames(projectcss.all, sty.freeBox__vbUi)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__v54YE)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___9RdDe
+                      )}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__dhSfH
+                        )}
+                      >
+                        {"Who can apply?"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__yJ4Wg)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span___5UeHy
+                        )}
+                      >
+                        {
+                          "Open to university students and recent graduates from Central Asia and surrounding regions with strong academic record and English proficiency."
+                        }
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox___7G644)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__kwc9A)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__ux4Oa
+                        )}
+                      >
+                        {"What does the fellowship package include?"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__hvp9)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__bu0F4
+                        )}
+                      >
+                        {
+                          "Fellows receive fully furnished housing, daily lunch on working days, and a monthly stipend. All activities are fully covered."
+                        }
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox___7BOgI)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__dMl2U)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__ydDNh
+                        )}
+                      >
+                        {"Do I need a U.S. visa?"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__kg50)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__r6VyE
+                        )}
+                      >
+                        {
+                          "Yes. Upon acceptance, we provide an official acceptance letter to support your visa application."
+                        }
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__g2KKq)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__a9CtH)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__sJFlO
+                        )}
+                      >
+                        {"What is the duration?"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__j2Rq)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__oF01L
+                        )}
+                      >
+                        {
+                          "6 weeks, July through August. First 3 weeks: Silicon Valley immersion. Final 3 weeks: startup fellowship."
+                        }
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__rM6Vg)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__oBw0)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__oY4W
+                        )}
+                      >
+                        {"What will I gain?"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__vfMaS)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span___3ZfiX
+                        )}
+                      >
+                        {
+                          "Certificate, recommendation letter, real startup experience, and a global network of innovators."
+                        }
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__mh5G)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__cd6Ax)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__vg4Fy
+                        )}
+                      >
+                        {"Is there a cost?"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___7Cqjl
+                      )}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__ufgD3
+                        )}
+                      >
+                        {
+                          "Housing and lunch are fully covered, stipend provided. Fellows cover airfare, visa fees, and personal expenses."
+                        }
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <footer className={classNames(projectcss.all, sty.footer___1ULwF)}>
+              <div className={classNames(projectcss.all, sty.freeBox__kqsHp)}>
+                <div className={classNames(projectcss.all, sty.freeBox__mWlO)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__rvvr6)}
+                  >
+                    <h3
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h3,
+                        projectcss.h3__q99j7,
+                        projectcss.__wab_text,
+                        sty.h3___6JH29
+                      )}
+                    >
+                      {"Silkroad Innovation Hub"}
+                    </h3>
+                    <p
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.p,
+                        projectcss.p__q99j7,
+                        projectcss.__wab_text,
+                        sty.p__df2Be
+                      )}
+                    >
+                      {"Fellowship Program"}
+                    </p>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__gng2P)}
+                  >
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.a__q99j7,
+                        sty.link__s28H
+                      )}
+                      component={Link}
+                      legacyBehavior={false}
+                      platform={"nextjs"}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__oqI8F
+                        )}
+                      >
+                        {"Program"}
+                      </span>
+                    </PlasmicLink__>
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.a__q99j7,
+                        sty.link__qga2V
+                      )}
+                      component={Link}
+                      legacyBehavior={false}
+                      platform={"nextjs"}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__hmXc8
+                        )}
+                      >
+                        {"Benefits"}
+                      </span>
+                    </PlasmicLink__>
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.a__q99j7,
+                        sty.link__ouVv
+                      )}
+                      component={Link}
+                      legacyBehavior={false}
+                      platform={"nextjs"}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__qnlo6
+                        )}
+                      >
+                        {"Timeline"}
+                      </span>
+                    </PlasmicLink__>
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.a__q99j7,
+                        sty.link___9Qf4V
+                      )}
+                      component={Link}
+                      legacyBehavior={false}
+                      platform={"nextjs"}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__vAiP
+                        )}
+                      >
+                        {"Mentors"}
+                      </span>
+                    </PlasmicLink__>
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.a__q99j7,
+                        sty.link__gZXf
+                      )}
+                      component={Link}
+                      legacyBehavior={false}
+                      platform={"nextjs"}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__gNdI
+                        )}
+                      >
+                        {"FAQ"}
+                      </span>
+                    </PlasmicLink__>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__r6HU2)}
+                  >
+                    <span
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.span,
+                        projectcss.span__q99j7,
+                        projectcss.__wab_text,
+                        sty.span__yA4Lm
+                      )}
+                    >
+                      {
+                        "\u00a9 2026 Silkroad Innovation Hub. All rights reserved."
+                      }
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </div>
+          <div className={classNames(projectcss.all, sty.freeBox__iWrQv)}>
+            <nav className={classNames(projectcss.all, sty.nav__mjx2X)}>
+              <div className={classNames(projectcss.all, sty.freeBox___6RMff)}>
+                <div
+                  className={classNames(projectcss.all, sty.freeBox___9LPyt)}
+                >
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox___1LMB)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__buLaJ)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__mBj54
+                        )}
+                      >
+                        {"~"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__vUfcL)}
+                    >
+                      <h1
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h1,
+                          projectcss.h1__q99j7,
+                          projectcss.__wab_text,
+                          sty.h1__n2N3K
+                        )}
+                      >
+                        {"Silkroad Innovation Hub"}
+                      </h1>
+                      <p
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.p,
+                          projectcss.p__q99j7,
+                          projectcss.__wab_text,
+                          sty.p__dfPnK
+                        )}
+                      >
+                        {"Fellowship Program"}
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__xoFm6)}
+                  >
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.a__q99j7,
+                        sty.link__ltr5
+                      )}
+                      component={Link}
+                      legacyBehavior={false}
+                      platform={"nextjs"}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__luOvA
+                        )}
+                      >
+                        {"Program"}
+                      </span>
+                    </PlasmicLink__>
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.a__q99j7,
+                        sty.link__epNpe
+                      )}
+                      component={Link}
+                      legacyBehavior={false}
+                      platform={"nextjs"}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__oozpe
+                        )}
+                      >
+                        {"Benefits"}
+                      </span>
+                    </PlasmicLink__>
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.a__q99j7,
+                        sty.link__nPbik
+                      )}
+                      component={Link}
+                      legacyBehavior={false}
+                      platform={"nextjs"}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__vyCe
+                        )}
+                      >
+                        {"Timeline"}
+                      </span>
+                    </PlasmicLink__>
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.a__q99j7,
+                        sty.link__zdMbU
+                      )}
+                      component={Link}
+                      legacyBehavior={false}
+                      platform={"nextjs"}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span___2GiEv
+                        )}
+                      >
+                        {"Mentors"}
+                      </span>
+                    </PlasmicLink__>
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.a__q99j7,
+                        sty.link__ntkjk
+                      )}
+                      component={Link}
+                      legacyBehavior={false}
+                      platform={"nextjs"}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__jrOBf
+                        )}
+                      >
+                        {"FAQ"}
+                      </span>
+                    </PlasmicLink__>
+                  </div>
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.a__q99j7,
+                      sty.link__j5UVf
+                    )}
+                    component={Link}
+                    legacyBehavior={false}
+                    platform={"nextjs"}
+                  >
+                    <span
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.span,
+                        projectcss.span__q99j7,
+                        projectcss.__wab_text,
+                        sty.span__o7ZFu
+                      )}
+                    >
+                      {"Apply Now"}
+                    </span>
+                  </PlasmicLink__>
+                </div>
+              </div>
+            </nav>
+            <section className={classNames(projectcss.all, sty.section__ltrDn)}>
+              <div className={classNames(projectcss.all, sty.freeBox__tn05G)}>
+                <div className={classNames(projectcss.all, sty.freeBox__gH6Pb)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__mwAoq)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__z9Yd)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__kEkex
+                        )}
+                      >
+                        {
+                          "\ud83d\uddd7 Applications Open \u00b7 Deadline June 1, 2026"
+                        }
+                      </span>
+                    </div>
+                    <h1
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h1,
+                        projectcss.h1__q99j7,
+                        projectcss.__wab_text,
+                        sty.h1__wjOI
+                      )}
+                    >
+                      {"Silkroad Fellowship Program"}
+                    </h1>
+                    <p
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.p,
+                        projectcss.p__q99j7,
+                        projectcss.__wab_text,
+                        sty.p__qUnn5
+                      )}
+                    >
+                      {
+                        "A 6-week immersive experience at the heart of Silicon Valley. Intern at leading startups, get mentored by Stanford and Harvard graduates, and explore the epicenter of global technology."
+                      }
+                    </p>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__kWCug)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__iGuPt
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__bW7
+                          )}
+                        >
+                          {"\ud83c\udfe0 Housing Included"}
+                        </span>
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__kiA1
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span___8Lob1
+                          )}
+                        >
+                          {"\ud83c\udf7d\ufe0f Meals Provided"}
+                        </span>
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__hiUfy
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__uUwuj
+                          )}
+                        >
+                          {"\ud83d\udcb0 Stipend"}
+                        </span>
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__pscM
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__jeww
+                          )}
+                        >
+                          {"\ud83c\udf09 Silicon Valley"}
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__wbOkr)}
+                    >
+                      <PlasmicLink__
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          projectcss.a__q99j7,
+                          sty.link__tk0Rs
+                        )}
+                        component={Link}
+                        legacyBehavior={false}
+                        platform={"nextjs"}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span___9Kuub
+                          )}
+                        >
+                          {"Apply Now"}
+                        </span>
+                      </PlasmicLink__>
+                      <PlasmicLink__
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          projectcss.a__q99j7,
+                          sty.link___50Sxi
+                        )}
+                        component={Link}
+                        legacyBehavior={false}
+                        platform={"nextjs"}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__fSVq
+                          )}
+                        >
+                          {"Learn More"}
+                        </span>
+                      </PlasmicLink__>
+                    </div>
+                    <p
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.p,
+                        projectcss.p__q99j7,
+                        projectcss.__wab_text,
+                        sty.p__qeHWb
+                      )}
+                    >
+                      {"\u23f0 Application Deadline: June 1, 2026"}
+                    </p>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox___4UJre)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__k2Kxg)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox___6YrE5
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span___4W0F
+                          )}
+                        >
+                          {"6"}
+                        </span>
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__amo9L
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__zRhvf
+                          )}
+                        >
+                          {"Weeks"}
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__lFnXu)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox___7Anaf
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__ghH9X
+                          )}
+                        >
+                          {"July"}
+                        </span>
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__kjjnV
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__jdCjM
+                          )}
+                        >
+                          {"Starts"}
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__wlSmk)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__fzYc0
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__huagb
+                          )}
+                        >
+                          {"Aug"}
+                        </span>
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__jROv
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__wSXg
+                          )}
+                        >
+                          {"Ends"}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section className={classNames(projectcss.all, sty.section__deWsa)}>
+              <div className={classNames(projectcss.all, sty.freeBox__loU9P)}>
+                <span
                   className={classNames(
                     projectcss.all,
-                    projectcss.h2,
-                    projectcss.h2__q99j7,
+                    projectcss.span,
+                    projectcss.span__q99j7,
                     projectcss.__wab_text,
-                    sty.h2__nHzTp
+                    sty.span___5A55U
                   )}
                 >
-                  {"Program Timeline"}
-                </h2>
-                <div className={classNames(projectcss.all, sty.freeBox__yPw1)}>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__fhaPh)}
+                  {"In partnership with world-class institutions"}
+                </span>
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__p0ODy)}>
+                <div className={classNames(projectcss.all, sty.freeBox__kXnmy)}>
+                  <span
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.span,
+                      projectcss.span__q99j7,
+                      projectcss.__wab_text,
+                      sty.span__l8AuJ
+                    )}
                   >
+                    {
+                      "Stanford University \u00b7 Harvard University \u00b7 McKinsey & Company \u00b7 Princeton University \u00b7 University of Sydney \u00b7 University of South Florida \u00b7 City University London \u00b7 San Francisco Bay University \u00b7 UNICEF \u00b7 Uzum \u00b7 Astana Hub \u00b7 Ingenium School \u00b7 Silkroad Innovation Hub \u00b7 Stanford University \u00b7 Harvard University \u00b7 McKinsey & Company \u00b7 Princeton University \u00b7 University of Sydney \u00b7 University of South Florida \u00b7 City University London \u00b7 San Francisco Bay University \u00b7 UNICEF \u00b7 Uzum \u00b7 Astana Hub \u00b7 Ingenium School \u00b7 Silkroad Innovation Hub"
+                    }
+                  </span>
+                </div>
+              </div>
+            </section>
+            <section className={classNames(projectcss.all, sty.section__glJq)}>
+              <div className={classNames(projectcss.all, sty.freeBox__qcQaZ)}>
+                <div className={classNames(projectcss.all, sty.freeBox__gcc8E)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__oPbT)}
+                  >
+                    <span
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.span,
+                        projectcss.span__q99j7,
+                        projectcss.__wab_text,
+                        sty.span__p8Ii2
+                      )}
+                    >
+                      {"What You Get"}
+                    </span>
+                  </div>
+                  <h2
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h2,
+                      projectcss.h2__q99j7,
+                      projectcss.__wab_text,
+                      sty.h2__fFwh
+                    )}
+                  >
+                    {"Everything You Need to Thrive"}
+                  </h2>
+                  <p
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.p,
+                      projectcss.p__q99j7,
+                      projectcss.__wab_text,
+                      sty.p__adLf
+                    )}
+                  >
+                    {
+                      "Fellows receive comprehensive support throughout the full 6-week program \u2014 so you can focus entirely on growing."
+                    }
+                  </p>
+                </div>
+                <div className={classNames(projectcss.all, sty.freeBox__nLaCz)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__ijXu3)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__mbxqK)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__zJodC
+                        )}
+                      >
+                        {"\ud83c\udfe0"}
+                      </span>
+                    </div>
                     <h3
                       className={classNames(
                         projectcss.all,
                         projectcss.h3,
                         projectcss.h3__q99j7,
                         projectcss.__wab_text,
-                        sty.h3__axt93
+                        sty.h3__uUgNf
                       )}
                     >
-                      {"Application Deadline - June 1st, 2024"}
+                      {"Housing"}
                     </h3>
                     <p
                       className={classNames(
@@ -837,27 +4546,83 @@ function PlasmicHome__RenderFunc(props: {
                         projectcss.p,
                         projectcss.p__q99j7,
                         projectcss.__wab_text,
-                        sty.p__h4GK
+                        sty.p__u8IcD
                       )}
                     >
                       {
-                        "Submit your application with all required documents. Late applications will not be considered. Don't miss this opportunity!"
+                        "Fully furnished accommodations provided for the entire 6-week program. You arrive and focus on learning \u2014 we handle the rest."
+                      }
+                    </p>
+                  </div>
+                  <div className={classNames(projectcss.all, sty.freeBox__n4D)}>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__clf4)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__m7SrV
+                        )}
+                      >
+                        {"\ud83c\udf7d\ufe0f"}
+                      </span>
+                    </div>
+                    <h3
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h3,
+                        projectcss.h3__q99j7,
+                        projectcss.__wab_text,
+                        sty.h3___1Gkks
+                      )}
+                    >
+                      {"Meals (Lunch)"}
+                    </h3>
+                    <p
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.p,
+                        projectcss.p__q99j7,
+                        projectcss.__wab_text,
+                        sty.p__f4Nmz
+                      )}
+                    >
+                      {
+                        "Daily lunch provided on all working days to keep you energized, connected with peers, and focused on what matters."
                       }
                     </p>
                   </div>
                   <div
-                    className={classNames(projectcss.all, sty.freeBox__wxDcm)}
+                    className={classNames(projectcss.all, sty.freeBox__ocSpq)}
                   >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__ki1Ta)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__frD26
+                        )}
+                      >
+                        {"\ud83d\udcb0"}
+                      </span>
+                    </div>
                     <h3
                       className={classNames(
                         projectcss.all,
                         projectcss.h3,
                         projectcss.h3__q99j7,
                         projectcss.__wab_text,
-                        sty.h3__maS2V
+                        sty.h3__yxXjb
                       )}
                     >
-                      {"Selection Process - June 2024"}
+                      {"Stipend"}
                     </h3>
                     <p
                       className={classNames(
@@ -865,27 +4630,42 @@ function PlasmicHome__RenderFunc(props: {
                         projectcss.p,
                         projectcss.p__q99j7,
                         projectcss.__wab_text,
-                        sty.p__iCw7
+                        sty.p__doboG
                       )}
                     >
                       {
-                        "Review of applications, interviews with shortlisted candidates, and final selection announcements by mid-June."
+                        "Receive a monthly stipend to support your experience and cover personal day-to-day expenses throughout the fellowship."
                       }
                     </p>
                   </div>
                   <div
-                    className={classNames(projectcss.all, sty.freeBox__l9OdA)}
+                    className={classNames(projectcss.all, sty.freeBox__mtTFy)}
                   >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__seuGe)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__ikhcU
+                        )}
+                      >
+                        {"\ud83c\udf09"}
+                      </span>
+                    </div>
                     <h3
                       className={classNames(
                         projectcss.all,
                         projectcss.h3,
                         projectcss.h3__q99j7,
                         projectcss.__wab_text,
-                        sty.h3___7Diq
+                        sty.h3__lqo2
                       )}
                     >
-                      {"Program Kickoff - July 1st, 2024"}
+                      {"Silicon Valley Immersion"}
                     </h3>
                     <p
                       className={classNames(
@@ -893,27 +4673,42 @@ function PlasmicHome__RenderFunc(props: {
                         projectcss.p,
                         projectcss.p__q99j7,
                         projectcss.__wab_text,
-                        sty.p__xP82O
+                        sty.p__wVcWo
                       )}
                     >
                       {
-                        "Arrival in Silicon Valley, orientation week, housing setup, and introduction to mentors and fellow participants."
+                        "Visit Google, Meta, and Apple campuses. Attend lectures from tech leaders. Experience the epicenter of global innovation first-hand."
                       }
                     </p>
                   </div>
                   <div
-                    className={classNames(projectcss.all, sty.freeBox__bMsuX)}
+                    className={classNames(projectcss.all, sty.freeBox__x3Wd)}
                   >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__fwgz)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__dXsyp
+                        )}
+                      >
+                        {"\ud83c\udf93"}
+                      </span>
+                    </div>
                     <h3
                       className={classNames(
                         projectcss.all,
                         projectcss.h3,
                         projectcss.h3__q99j7,
                         projectcss.__wab_text,
-                        sty.h3__rbDm4
+                        sty.h3__eeLQf
                       )}
                     >
-                      {"Intensive Program - July - August 2024"}
+                      {"Expert Mentorship"}
                     </h3>
                     <p
                       className={classNames(
@@ -921,27 +4716,42 @@ function PlasmicHome__RenderFunc(props: {
                         projectcss.p,
                         projectcss.p__q99j7,
                         projectcss.__wab_text,
-                        sty.p__jgoxK
+                        sty.p__cXrli
                       )}
                     >
                       {
-                        "6 weeks of workshops, mentorship sessions, company visits, networking events, and project development."
+                        "Weekly 1-on-1 guidance from graduates of Stanford, Harvard, and MIT \u2014 people who have been where you want to go."
                       }
                     </p>
                   </div>
                   <div
-                    className={classNames(projectcss.all, sty.freeBox__wq2Kf)}
+                    className={classNames(projectcss.all, sty.freeBox__n2HZm)}
                   >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__bueHx)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__bjtju
+                        )}
+                      >
+                        {"\ud83d\udcdc"}
+                      </span>
+                    </div>
                     <h3
                       className={classNames(
                         projectcss.all,
                         projectcss.h3,
                         projectcss.h3__q99j7,
                         projectcss.__wab_text,
-                        sty.h3__rLRg5
+                        sty.h3__qUakN
                       )}
                     >
-                      {"Demo Day - August 30th, 2024"}
+                      {"Certificate & Letter"}
                     </h3>
                     <p
                       className={classNames(
@@ -949,49 +4759,1775 @@ function PlasmicHome__RenderFunc(props: {
                         projectcss.p,
                         projectcss.p__q99j7,
                         projectcss.__wab_text,
-                        sty.p___56F56
+                        sty.p___9DOr
                       )}
                     >
                       {
-                        "Present your projects to investors, entrepreneurs, and industry leaders. Celebrate your achievements and new connections."
+                        "Graduate with an official certificate and a personalized recommendation letter to strengthen your university or job applications."
                       }
                     </p>
                   </div>
                 </div>
               </div>
             </section>
-            <section className={classNames(projectcss.all, sty.section__qxZwo)}>
-              <div className={classNames(projectcss.all, sty.freeBox___8H1P7)}>
-                <h2
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h2,
-                    projectcss.h2__q99j7,
-                    projectcss.__wab_text,
-                    sty.h2__fJJmx
-                  )}
+            <section
+              className={classNames(projectcss.all, sty.section___4SsXu)}
+            >
+              <div className={classNames(projectcss.all, sty.freeBox__yj05P)}>
+                <div className={classNames(projectcss.all, sty.freeBox__muOc5)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__mfelA)}
+                  >
+                    <span
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.span,
+                        projectcss.span__q99j7,
+                        projectcss.__wab_text,
+                        sty.span__pjOl
+                      )}
+                    >
+                      {"Program Structure"}
+                    </span>
+                  </div>
+                  <h2
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h2,
+                      projectcss.h2__q99j7,
+                      projectcss.__wab_text,
+                      sty.h2__bMsyh
+                    )}
+                  >
+                    {"6 Weeks. Two Transformative Experiences."}
+                  </h2>
+                  <p
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.p,
+                      projectcss.p__q99j7,
+                      projectcss.__wab_text,
+                      sty.p__id2ZR
+                    )}
+                  >
+                    {
+                      "Each half of the fellowship is designed to push your limits and expand your worldview."
+                    }
+                  </p>
+                </div>
+                <div className={classNames(projectcss.all, sty.freeBox__m5Pvb)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__woIak)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__gFrMr)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__dgIKv
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__v7LFd
+                          )}
+                        >
+                          {"Weeks 1\u20133"}
+                        </span>
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__cTp8Y
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__sbrN3
+                          )}
+                        >
+                          {"\ud83c\udf09"}
+                        </span>
+                      </div>
+                    </div>
+                    <h3
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h3,
+                        projectcss.h3__q99j7,
+                        projectcss.__wab_text,
+                        sty.h3___9HXgf
+                      )}
+                    >
+                      {"Silicon Valley Immersion"}
+                    </h3>
+                    <p
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.p,
+                        projectcss.p__q99j7,
+                        projectcss.__wab_text,
+                        sty.p__cDXz
+                      )}
+                    >
+                      {
+                        "An unforgettable journey visiting the offices of Google, Meta, and Apple. Attend lectures from industry experts, meet startup founders, and absorb the culture of innovation."
+                      }
+                    </p>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__uckDp)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__sBqyI
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__gcV8V
+                          )}
+                        >
+                          {"Campus tours: Stanford & Berkeley"}
+                        </span>
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__zoRqE
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span___76RXh
+                          )}
+                        >
+                          {"Expert lectures from top tech companies"}
+                        </span>
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__zhZle
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__cDnxd
+                          )}
+                        >
+                          {"Startup networking & ecosystem exploration"}
+                        </span>
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__rNtQh
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__ugjRi
+                          )}
+                        >
+                          {"Workshops on entrepreneurship & career growth"}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__tfbfo)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__mSWg)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__gkX2D
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__mcxuC
+                          )}
+                        >
+                          {"Weeks 4\u20136"}
+                        </span>
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__hkNue
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__dczU4
+                          )}
+                        >
+                          {"\ud83d\udca1"}
+                        </span>
+                      </div>
+                    </div>
+                    <h3
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h3,
+                        projectcss.h3__q99j7,
+                        projectcss.__wab_text,
+                        sty.h3___859Zv
+                      )}
+                    >
+                      {"Startup Fellowship"}
+                    </h3>
+                    <p
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.p,
+                        projectcss.p__q99j7,
+                        projectcss.__wab_text,
+                        sty.p__i0HFf
+                      )}
+                    >
+                      {
+                        "Work hands-on within a U.S.-based startup team. Contribute to real projects, understand business operations from the inside, and build skills that set you apart."
+                      }
+                    </p>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__o29TO)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__qcKf
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span___9T65X
+                          )}
+                        >
+                          {"Embedded in a real startup team"}
+                        </span>
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox___25H4
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__nmUc
+                          )}
+                        >
+                          {"Work on live product & business challenges"}
+                        </span>
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__rX8B
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__zJpm5
+                          )}
+                        >
+                          {"Weekly 1-on-1 mentorship sessions"}
+                        </span>
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox___6ZoSj
+                        )}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span___9Zkq
+                          )}
+                        >
+                          {"Final project presentation to startup founders"}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section className={classNames(projectcss.all, sty.section__xEoE)}>
+              <div className={classNames(projectcss.all, sty.freeBox__jvlDe)}>
+                <div className={classNames(projectcss.all, sty.freeBox__quNCj)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__joJz4)}
+                  >
+                    <span
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.span,
+                        projectcss.span__q99j7,
+                        projectcss.__wab_text,
+                        sty.span__tXGi
+                      )}
+                    >
+                      {"Program Timeline"}
+                    </span>
+                  </div>
+                  <h2
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h2,
+                      projectcss.h2__q99j7,
+                      projectcss.__wab_text,
+                      sty.h2__zrhRk
+                    )}
+                  >
+                    {"Key Dates for 2026"}
+                  </h2>
+                  <p
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.p,
+                      projectcss.p__q99j7,
+                      projectcss.__wab_text,
+                      sty.p__r3OcW
+                    )}
+                  >
+                    {
+                      "Mark your calendar \u2014 spots are limited and the deadline is firm."
+                    }
+                  </p>
+                </div>
+                <div className={classNames(projectcss.all, sty.freeBox__ggnUa)}>
+                  <div className={classNames(projectcss.all, sty.freeBox__bWg)}>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__iu9Lj)}
+                    />
+
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__sTdCo)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__zpvCl
+                        )}
+                      >
+                        {"June 1"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___0Icvq
+                      )}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__l9IkN
+                        )}
+                      >
+                        {"Application Deadline"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__mso6N)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__bfnaB
+                        )}
+                      >
+                        {"Submit your application before this date"}
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__c1Ltg)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__xsvYq)}
+                    />
+
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__gxYnb)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__kSow6
+                        )}
+                      >
+                        {"June 15"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__b6XZs)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__nUh
+                        )}
+                      >
+                        {"Decisions Released"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__jjTcP)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__om6Mw
+                        )}
+                      >
+                        {"Accepted fellows are notified"}
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__aJl8M)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__cm28)}
+                    />
+
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__gCTgP)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__zxy0
+                        )}
+                      >
+                        {"July"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__oBruK)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span___3IpqY
+                        )}
+                      >
+                        {"Program Begins"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__ela0S)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__fyJVo
+                        )}
+                      >
+                        {"Kick-off week in Silicon Valley"}
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox___7D3QL)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__cfUeK)}
+                    />
+
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__kune)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__sizvt
+                        )}
+                      >
+                        {"August"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__e1Wxj)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__hLTuO
+                        )}
+                      >
+                        {"Program Ends"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___6Iptn
+                      )}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__zOnti
+                        )}
+                      >
+                        {"6-week journey concludes"}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section
+              className={classNames(projectcss.all, sty.section___8EJoj)}
+            >
+              <div className={classNames(projectcss.all, sty.freeBox___4Ucau)}>
+                <div className={classNames(projectcss.all, sty.freeBox___9FSo)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__dW9Fn)}
+                  >
+                    <span
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.span,
+                        projectcss.span__q99j7,
+                        projectcss.__wab_text,
+                        sty.span___8IthK
+                      )}
+                    >
+                      {"Our Team"}
+                    </span>
+                  </div>
+                  <h2
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h2,
+                      projectcss.h2__q99j7,
+                      projectcss.__wab_text,
+                      sty.h2__kU8I
+                    )}
+                  >
+                    {"Mentors & Experts"}
+                  </h2>
+                  <p
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.p,
+                      projectcss.p__q99j7,
+                      projectcss.__wab_text,
+                      sty.p__goEbz
+                    )}
+                  >
+                    {
+                      "The program is developed and led by graduates of the world's top universities who have navigated the journey you're about to begin."
+                    }
+                  </p>
+                </div>
+                <div className={classNames(projectcss.all, sty.freeBox__cn1Q)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__rJwVo)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__jLaFj)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__eInDl
+                        )}
+                      >
+                        {"AS"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__odRv)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__ph421
+                        )}
+                      >
+                        {"Aiya Seksenbayeva"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__tFcxB)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__uNcjg
+                        )}
+                      >
+                        {"Program Director"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__iPiIh)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__lVfa5
+                        )}
+                      >
+                        {"Stanford University"}
+                      </span>
+                    </div>
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.a__q99j7,
+                        sty.link___6CkGw
+                      )}
+                      component={Link}
+                      legacyBehavior={false}
+                      platform={"nextjs"}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__d1Coq
+                        )}
+                      >
+                        {"LinkedIn \u2192"}
+                      </span>
+                    </PlasmicLink__>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__ourEx)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__cQqSe)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__lSeRa
+                        )}
+                      >
+                        {"AA"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__qS0)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__dUxpQ
+                        )}
+                      >
+                        {"Asset Abdualiyev"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__rDi1T)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__gt48
+                        )}
+                      >
+                        {"Lead Mentor"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__h7P4L)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__qbrct
+                        )}
+                      >
+                        {"Harvard University"}
+                      </span>
+                    </div>
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.a__q99j7,
+                        sty.link__cu3Zv
+                      )}
+                      component={Link}
+                      legacyBehavior={false}
+                      platform={"nextjs"}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span___5CZ8
+                        )}
+                      >
+                        {"LinkedIn \u2192"}
+                      </span>
+                    </PlasmicLink__>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__gYr0D)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___2TH2B
+                      )}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span___50Wgj
+                        )}
+                      >
+                        {"NA"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__a5Vl)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span___4KGd1
+                        )}
+                      >
+                        {"Naza Aibar"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__jzOgc)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__luVgw
+                        )}
+                      >
+                        {"Research Lead"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__gskvL)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__rk0Zj
+                        )}
+                      >
+                        {"MIT"}
+                      </span>
+                    </div>
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.a__q99j7,
+                        sty.link__cTNb
+                      )}
+                      component={Link}
+                      legacyBehavior={false}
+                      platform={"nextjs"}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__he46N
+                        )}
+                      >
+                        {"LinkedIn \u2192"}
+                      </span>
+                    </PlasmicLink__>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox___1V9Z4)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__pglbD)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__gy0Ye
+                        )}
+                      >
+                        {"SI"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__iIDuJ)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__qk91Y
+                        )}
+                      >
+                        {"Shokhrukh Ibragimov"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__r9OoA)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__tiz8L
+                        )}
+                      >
+                        {"Startup Mentor"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__lXoVj)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__apd3E
+                        )}
+                      >
+                        {"Princeton University"}
+                      </span>
+                    </div>
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.a__q99j7,
+                        sty.link__ruIh0
+                      )}
+                      component={Link}
+                      legacyBehavior={false}
+                      platform={"nextjs"}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__bLkSj
+                        )}
+                      >
+                        {"LinkedIn \u2192"}
+                      </span>
+                    </PlasmicLink__>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section className={classNames(projectcss.all, sty.section__rn3rd)}>
+              <div className={classNames(projectcss.all, sty.freeBox__o4Spq)}>
+                <div
+                  className={classNames(projectcss.all, sty.freeBox___4Q76J)}
                 >
-                  {"Ready to Transform Your Future?"}
-                </h2>
-                <p
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.p,
-                    projectcss.p__q99j7,
-                    projectcss.__wab_text,
-                    sty.p__wiHef
-                  )}
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__unAg4)}
+                  >
+                    <span
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.span,
+                        projectcss.span__q99j7,
+                        projectcss.__wab_text,
+                        sty.span__wwlbD
+                      )}
+                    >
+                      {"Apply Now"}
+                    </span>
+                  </div>
+                  <h2
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h2,
+                      projectcss.h2__q99j7,
+                      projectcss.__wab_text,
+                      sty.h2___1MwEg
+                    )}
+                  >
+                    {"Start Your Silicon Valley Journey"}
+                  </h2>
+                  <p
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.p,
+                      projectcss.p__q99j7,
+                      projectcss.__wab_text,
+                      sty.p___8UaMp
+                    )}
+                  >
+                    {
+                      "Applications close June 1, 2026. Limited spots available \u2014 don't wait."
+                    }
+                  </p>
+                </div>
+                <form className={classNames(projectcss.all, sty.form___45807)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__k7BmW)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__ePCvp)}
+                    >
+                      <label
+                        className={classNames(projectcss.all, sty.label__eyHQo)}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__vGwRc
+                          )}
+                        >
+                          {"Full Name"}
+                        </span>
+                      </label>
+                      <input
+                        data-plasmic-name={"textbox5"}
+                        data-plasmic-override={overrides.textbox5}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.input,
+                          projectcss.input__q99j7,
+                          sty.textbox5
+                        )}
+                        onChange={async (...eventArgs: any) => {
+                          (e => {
+                            generateStateOnChangeProp($state, [
+                              "textbox5",
+                              "value"
+                            ])(e.target.value);
+                          }).apply(null, eventArgs);
+                        }}
+                        ref={ref => {
+                          $refs["textbox5"] = ref;
+                        }}
+                        value={
+                          generateStateValueProp($state, [
+                            "textbox5",
+                            "value"
+                          ]) ?? ""
+                        }
+                      />
+                    </div>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___3RsJj
+                      )}
+                    >
+                      <label
+                        className={classNames(projectcss.all, sty.label__mJbvZ)}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__axjvk
+                          )}
+                        >
+                          {"Email Address"}
+                        </span>
+                      </label>
+                      <input
+                        data-plasmic-name={"textbox6"}
+                        data-plasmic-override={overrides.textbox6}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.input,
+                          projectcss.input__q99j7,
+                          sty.textbox6
+                        )}
+                        onChange={async (...eventArgs: any) => {
+                          (e => {
+                            generateStateOnChangeProp($state, [
+                              "textbox6",
+                              "value"
+                            ])(e.target.value);
+                          }).apply(null, eventArgs);
+                        }}
+                        ref={ref => {
+                          $refs["textbox6"] = ref;
+                        }}
+                        value={
+                          generateStateValueProp($state, [
+                            "textbox6",
+                            "value"
+                          ]) ?? ""
+                        }
+                      />
+                    </div>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__gOqZn)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__h2Hcb)}
+                    >
+                      <label
+                        className={classNames(projectcss.all, sty.label__or6Hn)}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span___0MaH
+                          )}
+                        >
+                          {"Phone / WhatsApp"}
+                        </span>
+                      </label>
+                      <input
+                        data-plasmic-name={"textbox7"}
+                        data-plasmic-override={overrides.textbox7}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.input,
+                          projectcss.input__q99j7,
+                          sty.textbox7
+                        )}
+                        onChange={async (...eventArgs: any) => {
+                          (e => {
+                            generateStateOnChangeProp($state, [
+                              "textbox7",
+                              "value"
+                            ])(e.target.value);
+                          }).apply(null, eventArgs);
+                        }}
+                        ref={ref => {
+                          $refs["textbox7"] = ref;
+                        }}
+                        value={
+                          generateStateValueProp($state, [
+                            "textbox7",
+                            "value"
+                          ]) ?? ""
+                        }
+                      />
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__eO4PB)}
+                    >
+                      <label
+                        className={classNames(projectcss.all, sty.label__w56SD)}
+                      >
+                        <span
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.span,
+                            projectcss.span__q99j7,
+                            projectcss.__wab_text,
+                            sty.span__iBg8P
+                          )}
+                        >
+                          {"LinkedIn Profile URL"}
+                        </span>
+                      </label>
+                      <input
+                        data-plasmic-name={"textbox8"}
+                        data-plasmic-override={overrides.textbox8}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.input,
+                          projectcss.input__q99j7,
+                          sty.textbox8
+                        )}
+                        onChange={async (...eventArgs: any) => {
+                          (e => {
+                            generateStateOnChangeProp($state, [
+                              "textbox8",
+                              "value"
+                            ])(e.target.value);
+                          }).apply(null, eventArgs);
+                        }}
+                        ref={ref => {
+                          $refs["textbox8"] = ref;
+                        }}
+                        value={
+                          generateStateValueProp($state, [
+                            "textbox8",
+                            "value"
+                          ]) ?? ""
+                        }
+                      />
+                    </div>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__ba5Uu)}
+                  >
+                    <label
+                      className={classNames(projectcss.all, sty.label__g9LHh)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__wLGl9
+                        )}
+                      >
+                        {
+                          "Tell us why you want to join the Silkroad Fellowship Program (optional)"
+                        }
+                      </span>
+                    </label>
+                    <textarea
+                      data-plasmic-name={"textarea2"}
+                      data-plasmic-override={overrides.textarea2}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.textarea,
+                        projectcss.textarea__q99j7,
+                        sty.textarea2
+                      )}
+                      onChange={async (...eventArgs: any) => {
+                        (e => {
+                          generateStateOnChangeProp($state, [
+                            "textarea2",
+                            "value"
+                          ])(e.target.value);
+                        }).apply(null, eventArgs);
+                      }}
+                      ref={ref => {
+                        $refs["textarea2"] = ref;
+                      }}
+                      style={
+                        triggers.focus_textarea2
+                          ? { resize: "vertical" }
+                          : { resize: "vertical" }
+                      }
+                      value={
+                        generateStateValueProp($state, [
+                          "textarea2",
+                          "value"
+                        ]) ?? ""
+                      }
+                      data-plasmic-trigger-props={[triggerTextarea2FocusProps]}
+                    />
+                  </div>
+                  <button
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.button,
+                      projectcss.button__q99j7,
+                      sty.button__s2F2F
+                    )}
+                  >
+                    <span
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.span,
+                        projectcss.span__q99j7,
+                        projectcss.__wab_text,
+                        sty.span__ozgme
+                      )}
+                    >
+                      {"Submit Application"}
+                    </span>
+                  </button>
+                </form>
+              </div>
+            </section>
+            <section className={classNames(projectcss.all, sty.section__rrxT)}>
+              <div className={classNames(projectcss.all, sty.freeBox__i3Gx7)}>
+                <div
+                  className={classNames(projectcss.all, sty.freeBox___6O0Ax)}
                 >
-                  {
-                    "Join the next generation of entrepreneurs in Silicon Valley. Applications close June 1st, 2024. Don't wait - your startup journey begins here."
-                  }
-                </p>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__tBuXb)}
+                  >
+                    <span
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.span,
+                        projectcss.span__q99j7,
+                        projectcss.__wab_text,
+                        sty.span__vwUl1
+                      )}
+                    >
+                      {"FAQ"}
+                    </span>
+                  </div>
+                  <h2
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.h2,
+                      projectcss.h2__q99j7,
+                      projectcss.__wab_text,
+                      sty.h2___4N3Ra
+                    )}
+                  >
+                    {"Frequently Asked Questions"}
+                  </h2>
+                </div>
+                <div className={classNames(projectcss.all, sty.freeBox__e3Gjf)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__xo1IN)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox___68Id)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__sbyq
+                        )}
+                      >
+                        {"Who can apply?"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__kU7Os)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__q69KS
+                        )}
+                      >
+                        {
+                          "Open to university students and recent graduates from Central Asia and surrounding regions with strong academic record and English proficiency."
+                        }
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__xsTQh)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__m1VgI)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__slqzS
+                        )}
+                      >
+                        {"What does the fellowship package include?"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__x7YYl)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__fy3T
+                        )}
+                      >
+                        {
+                          "Fellows receive fully furnished housing, daily lunch on working days, and a monthly stipend. All activities are fully covered."
+                        }
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__vc57M)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__vOn7F)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__v9E2N
+                        )}
+                      >
+                        {"Do I need a U.S. visa?"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__aqegT)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__yCwu7
+                        )}
+                      >
+                        {
+                          "Yes. Upon acceptance, we provide an official acceptance letter to support your visa application."
+                        }
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__jloHd)}
+                  >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___44CrW
+                      )}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__dAqhl
+                        )}
+                      >
+                        {"What is the duration?"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__xFXk)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__dVfbf
+                        )}
+                      >
+                        {
+                          "6 weeks, July through August. First 3 weeks: Silicon Valley immersion. Final 3 weeks: startup fellowship."
+                        }
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__dmFsQ)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__fjrav)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span___20ScR
+                        )}
+                      >
+                        {"What will I gain?"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___0Cym0
+                      )}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__bxi9M
+                        )}
+                      >
+                        {
+                          "Certificate, recommendation letter, real startup experience, and a global network of innovators."
+                        }
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__q9Vu8)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__wPfde)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__f4Kuk
+                        )}
+                      >
+                        {"Is there a cost?"}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__mFgxa)}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span___7T9Gp
+                        )}
+                      >
+                        {
+                          "Housing and lunch are fully covered, stipend provided. Fellows cover airfare, visa fees, and personal expenses."
+                        }
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <footer className={classNames(projectcss.all, sty.footer__jEu7)}>
+              <div className={classNames(projectcss.all, sty.freeBox__y9PB)}>
+                <div className={classNames(projectcss.all, sty.freeBox__gvP9G)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__cErNy)}
+                  >
+                    <h3
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.h3,
+                        projectcss.h3__q99j7,
+                        projectcss.__wab_text,
+                        sty.h3__uw7Qs
+                      )}
+                    >
+                      {"Silkroad Innovation Hub"}
+                    </h3>
+                    <p
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.p,
+                        projectcss.p__q99j7,
+                        projectcss.__wab_text,
+                        sty.p__eBx
+                      )}
+                    >
+                      {"Fellowship Program"}
+                    </p>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__ewqJt)}
+                  >
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.a__q99j7,
+                        sty.link__qjFF
+                      )}
+                      component={Link}
+                      legacyBehavior={false}
+                      platform={"nextjs"}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__qlWiz
+                        )}
+                      >
+                        {"Program"}
+                      </span>
+                    </PlasmicLink__>
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.a__q99j7,
+                        sty.link__slYbd
+                      )}
+                      component={Link}
+                      legacyBehavior={false}
+                      platform={"nextjs"}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__w76JO
+                        )}
+                      >
+                        {"Benefits"}
+                      </span>
+                    </PlasmicLink__>
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.a__q99j7,
+                        sty.link__cjA9D
+                      )}
+                      component={Link}
+                      legacyBehavior={false}
+                      platform={"nextjs"}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__jzAmk
+                        )}
+                      >
+                        {"Timeline"}
+                      </span>
+                    </PlasmicLink__>
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.a__q99j7,
+                        sty.link__wzPbl
+                      )}
+                      component={Link}
+                      legacyBehavior={false}
+                      platform={"nextjs"}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span___2TRe
+                        )}
+                      >
+                        {"Mentors"}
+                      </span>
+                    </PlasmicLink__>
+                    <PlasmicLink__
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        projectcss.a__q99j7,
+                        sty.link__wGxG
+                      )}
+                      component={Link}
+                      legacyBehavior={false}
+                      platform={"nextjs"}
+                    >
+                      <span
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.span,
+                          projectcss.span__q99j7,
+                          projectcss.__wab_text,
+                          sty.span__dJAg2
+                        )}
+                      >
+                        {"FAQ"}
+                      </span>
+                    </PlasmicLink__>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__i1RVj)}
+                  >
+                    <span
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.span,
+                        projectcss.span__q99j7,
+                        projectcss.__wab_text,
+                        sty.span__iHkmK
+                      )}
+                    >
+                      {
+                        "\u00a9 2026 Silkroad Innovation Hub. All rights reserved."
+                      }
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </div>
+          <div className={classNames(projectcss.all, sty.freeBox__lhh9Q)}>
+            <header
+              data-plasmic-name={"header"}
+              data-plasmic-override={overrides.header}
+              className={classNames(projectcss.all, sty.header)}
+            >
+              <div className={classNames(projectcss.all, sty.freeBox__cTgU6)}>
                 <PlasmicLink__
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
                     projectcss.a__q99j7,
-                    sty.link__fUagt
+                    sty.link___8EXjT
                   )}
                   component={Link}
                   legacyBehavior={false}
@@ -1003,200 +6539,131 @@ function PlasmicHome__RenderFunc(props: {
                       projectcss.span,
                       projectcss.span__q99j7,
                       projectcss.__wab_text,
-                      sty.span___2Dpm
+                      sty.span__mxLMd
                     )}
                   >
-                    {"Apply Now - Deadline June 1st"}
+                    {"GreenTech"}
                   </span>
                 </PlasmicLink__>
-              </div>
-            </section>
-            <footer
-              data-plasmic-name={"footer"}
-              data-plasmic-override={overrides.footer}
-              className={classNames(projectcss.all, sty.footer)}
-            >
-              <div className={classNames(projectcss.all, sty.freeBox__cTvs8)}>
-                <div className={classNames(projectcss.all, sty.freeBox__mZiaa)}>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__woRsi)}
+                <nav className={classNames(projectcss.all, sty.nav__okFhO)}>
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.a__q99j7,
+                      sty.link__p9R
+                    )}
+                    component={Link}
+                    legacyBehavior={false}
+                    platform={"nextjs"}
                   >
-                    <h3
+                    <span
                       className={classNames(
                         projectcss.all,
-                        projectcss.h3,
-                        projectcss.h3__q99j7,
+                        projectcss.span,
+                        projectcss.span__q99j7,
                         projectcss.__wab_text,
-                        sty.h3__hi4Mz
+                        sty.span__trPW
                       )}
                     >
-                      {"Silkroad Fellowship"}
-                    </h3>
-                    <p
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.p,
-                        projectcss.p__q99j7,
-                        projectcss.__wab_text,
-                        sty.p__nyQly
-                      )}
-                    >
-                      {
-                        "Empowering the next generation of entrepreneurs through immersive Silicon Valley experience."
-                      }
-                    </p>
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox___60CKe)}
+                      {"Home"}
+                    </span>
+                  </PlasmicLink__>
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.a__q99j7,
+                      sty.link__nV1Mu
+                    )}
+                    component={Link}
+                    legacyBehavior={false}
+                    platform={"nextjs"}
                   >
-                    <h3
+                    <span
                       className={classNames(
                         projectcss.all,
-                        projectcss.h3,
-                        projectcss.h3__q99j7,
+                        projectcss.span,
+                        projectcss.span__q99j7,
                         projectcss.__wab_text,
-                        sty.h3__hS2DD
+                        sty.span__x2Bjy
                       )}
                     >
-                      {"Program"}
-                    </h3>
-                    <p
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.p,
-                        projectcss.p__q99j7,
-                        projectcss.__wab_text,
-                        sty.p___19AiY
-                      )}
-                    >
-                      {"Overview"}
-                    </p>
-                    <p
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.p,
-                        projectcss.p__q99j7,
-                        projectcss.__wab_text,
-                        sty.p___4Q2IF
-                      )}
-                    >
-                      {"Benefits"}
-                    </p>
-                    <p
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.p,
-                        projectcss.p__q99j7,
-                        projectcss.__wab_text,
-                        sty.p__a2AjL
-                      )}
-                    >
-                      {"Timeline"}
-                    </p>
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__eOvVp)}
+                      {"About"}
+                    </span>
+                  </PlasmicLink__>
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.a__q99j7,
+                      sty.link__kRi0
+                    )}
+                    component={Link}
+                    legacyBehavior={false}
+                    platform={"nextjs"}
                   >
-                    <h3
+                    <span
                       className={classNames(
                         projectcss.all,
-                        projectcss.h3,
-                        projectcss.h3__q99j7,
+                        projectcss.span,
+                        projectcss.span__q99j7,
                         projectcss.__wab_text,
-                        sty.h3__yIsXn
+                        sty.span__jkTtH
+                      )}
+                    >
+                      {"Services"}
+                    </span>
+                  </PlasmicLink__>
+                  <PlasmicLink__
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      projectcss.a__q99j7,
+                      sty.link__zGrR
+                    )}
+                    component={Link}
+                    legacyBehavior={false}
+                    platform={"nextjs"}
+                  >
+                    <span
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.span,
+                        projectcss.span__q99j7,
+                        projectcss.__wab_text,
+                        sty.span__fyr6C
                       )}
                     >
                       {"Contact"}
-                    </h3>
-                    <p
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.p,
-                        projectcss.p__q99j7,
-                        projectcss.__wab_text,
-                        sty.p___71Bgk
-                      )}
-                    >
-                      {"info@silkroadfellowship.com"}
-                    </p>
-                    <p
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.p,
-                        projectcss.p__q99j7,
-                        projectcss.__wab_text,
-                        sty.p__i0A
-                      )}
-                    >
-                      {"+1 (555) 123-4567"}
-                    </p>
-                  </div>
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__eh0F7)}
-                  >
-                    <h3
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.h3,
-                        projectcss.h3__q99j7,
-                        projectcss.__wab_text,
-                        sty.h3__fEv1X
-                      )}
-                    >
-                      {"Follow Us"}
-                    </h3>
-                    <p
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.p,
-                        projectcss.p__q99j7,
-                        projectcss.__wab_text,
-                        sty.p__pM
-                      )}
-                    >
-                      {"LinkedIn"}
-                    </p>
-                    <p
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.p,
-                        projectcss.p__q99j7,
-                        projectcss.__wab_text,
-                        sty.p__lba8O
-                      )}
-                    >
-                      {"Twitter"}
-                    </p>
-                    <p
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.p,
-                        projectcss.p__q99j7,
-                        projectcss.__wab_text,
-                        sty.p__y3Qiz
-                      )}
-                    >
-                      {"Instagram"}
-                    </p>
-                  </div>
-                </div>
-                <div className={classNames(projectcss.all, sty.freeBox__wXhr7)}>
-                  <p
+                    </span>
+                  </PlasmicLink__>
+                </nav>
+                <PlasmicLink__
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.a__q99j7,
+                    sty.link__t5Ejd
+                  )}
+                  component={Link}
+                  legacyBehavior={false}
+                  platform={"nextjs"}
+                >
+                  <span
                     className={classNames(
                       projectcss.all,
-                      projectcss.p,
-                      projectcss.p__q99j7,
+                      projectcss.span,
+                      projectcss.span__q99j7,
                       projectcss.__wab_text,
-                      sty.p__nGfr2
+                      sty.span__lEeXd
                     )}
                   >
-                    {
-                      "\u00a9 2024 Silkroad Fellowship Program. All rights reserved."
-                    }
-                  </p>
-                </div>
+                    {"Get Started"}
+                  </span>
+                </PlasmicLink__>
               </div>
-            </footer>
+            </header>
           </div>
         </div>
       </div>
@@ -1205,19 +6672,60 @@ function PlasmicHome__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "nav", "h1", "footer"],
-  nav: ["nav"],
-  h1: ["h1"],
-  footer: ["footer"]
+  root: [
+    "root",
+    "textbox9",
+    "textbox10",
+    "textbox11",
+    "textarea3",
+    "textbox",
+    "textbox2",
+    "textbox3",
+    "textbox4",
+    "textarea",
+    "textbox5",
+    "textbox6",
+    "textbox7",
+    "textbox8",
+    "textarea2",
+    "header"
+  ],
+  textbox9: ["textbox9"],
+  textbox10: ["textbox10"],
+  textbox11: ["textbox11"],
+  textarea3: ["textarea3"],
+  textbox: ["textbox"],
+  textbox2: ["textbox2"],
+  textbox3: ["textbox3"],
+  textbox4: ["textbox4"],
+  textarea: ["textarea"],
+  textbox5: ["textbox5"],
+  textbox6: ["textbox6"],
+  textbox7: ["textbox7"],
+  textbox8: ["textbox8"],
+  textarea2: ["textarea2"],
+  header: ["header"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  nav: "nav";
-  h1: "h1";
-  footer: "footer";
+  textbox9: "input";
+  textbox10: "input";
+  textbox11: "input";
+  textarea3: "textarea";
+  textbox: "input";
+  textbox2: "input";
+  textbox3: "input";
+  textbox4: "input";
+  textarea: "textarea";
+  textbox5: "input";
+  textbox6: "input";
+  textbox7: "input";
+  textbox8: "input";
+  textarea2: "textarea";
+  header: "header";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -1282,9 +6790,21 @@ export const PlasmicHome = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    nav: makeNodeComponent("nav"),
-    h1: makeNodeComponent("h1"),
-    footer: makeNodeComponent("footer"),
+    textbox9: makeNodeComponent("textbox9"),
+    textbox10: makeNodeComponent("textbox10"),
+    textbox11: makeNodeComponent("textbox11"),
+    textarea3: makeNodeComponent("textarea3"),
+    textbox: makeNodeComponent("textbox"),
+    textbox2: makeNodeComponent("textbox2"),
+    textbox3: makeNodeComponent("textbox3"),
+    textbox4: makeNodeComponent("textbox4"),
+    textarea: makeNodeComponent("textarea"),
+    textbox5: makeNodeComponent("textbox5"),
+    textbox6: makeNodeComponent("textbox6"),
+    textbox7: makeNodeComponent("textbox7"),
+    textbox8: makeNodeComponent("textbox8"),
+    textarea2: makeNodeComponent("textarea2"),
+    header: makeNodeComponent("header"),
 
     // Metadata about props expected for PlasmicHome
     internalVariantProps: PlasmicHome__VariantProps,
